@@ -13,7 +13,6 @@ function init() {
 }
 
 const addEventListeners = () => {
-
 }
 
 const setFavicon = () => {
@@ -22,17 +21,15 @@ const setFavicon = () => {
     const linkTag = document.getElementById('favicon')
 
     if (isDark) {
-        linkTag.setAttribute('href', '/JR-darkTheme.ico?')
-        console.log('dark theme')
+        linkTag.setAttribute('href', '/img/favicons/JR-darkTheme.ico')
     } else {
-        linkTag.setAttribute('href', '/JR.ico?')
-        console.log('light theme')
+        linkTag.setAttribute('href', '/img/favicons/JR.ico')
     }
 
     documentHead.appendChild(linkTag)
 }
 
 const detectDarkMode = () => {
-    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     return isDark
 }
