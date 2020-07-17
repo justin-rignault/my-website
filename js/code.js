@@ -29,6 +29,7 @@ const setFavicon = () => {
         linkTag.setAttribute('href', '../img/favicons/JR.ico')
     }
 
+    console.log(documentHead, linkTag)
     documentHead.appendChild(linkTag)
 }
 
