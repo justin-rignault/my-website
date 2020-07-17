@@ -9,14 +9,31 @@ document.addEventListener('DOMContentLoaded', init)
 
 function init() {
     addEventListeners()
-    detectDarkMode()
+    setFavicon()
 }
 
 const addEventListeners = () => {
 
 }
 
+const setFavicon = () => {
+    const isDark = detectDarkMode()
+    const documentHead = document.querySelector('head')
+    const linkTag = document.createElement('link')
+
+
+    linkTag.setAttribute('rel', 'icon')
+
+    if (isDark) {
+        linkTag.setAttribute('href', '../img/favicons/JR-darkTheme.ico')
+    } else {
+        linkTag.setAttribute('href', '../img/favicons/JR.ico')
+    }
+
+    documentHead.append(linkTag)
+}
+
 const detectDarkMode = () => {
-    const isDark = window.matchMedia('(prefers-color-scheme: dark)')
-    console.log(isDark)
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    return isDark
 }
