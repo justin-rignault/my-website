@@ -22,9 +22,9 @@ const setFavicon = () => {
     const linkTag = document.getElementById('favicon')
 
     if (isDark) {
-        linkTag.setAttribute('href', '/favicons/JR-darkTheme.ico')
+        linkTag.setAttribute('href', '/JR-darkTheme.ico?')
     } else {
-        linkTag.setAttribute('href', '/favicons/JR.ico')
+        linkTag.setAttribute('href', '/JR.ico?')
     }
 
     documentHead.appendChild(linkTag)
