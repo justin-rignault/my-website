@@ -21,7 +21,6 @@ const setFavicon = () => {
     const documentHead = document.querySelector('head')
     const linkTag = document.createElement('link')
 
-
     linkTag.setAttribute('rel', 'icon')
 
     if (isDark) {
@@ -30,7 +29,7 @@ const setFavicon = () => {
         linkTag.setAttribute('href', '../img/favicons/JR.ico')
     }
 
-    documentHead.append(linkTag)
+    documentHead.appendChild(linkTag)
 }
 
 const detectDarkMode = () => {
