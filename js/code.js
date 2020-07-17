@@ -13,6 +13,7 @@ function init() {
 }
 
 const addEventListeners = () => {
+    
 }
 
 const setFavicon = () => {

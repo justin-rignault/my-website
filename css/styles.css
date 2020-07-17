@@ -1,3 +1,95 @@
+/***************************************************************************
+Filename: styles.css
+Author: Justin Rignault
+Description: main css file linked to index.html for my personal website
+****************************************************************************/
+
+/**********************************************
+                IMPORTS
+***********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/**********************************************
+                DEFAULTS
+***********************************************/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Open sans', helvetica, sans-serif;
+    /*scroll-behavior: smooth; */
+}
+
+:root {
+    --fontOne: 4.209rem;
+    --fontTwo: 3.157rem;
+    --fontThree: 2.369rem;
+    --fontFour: 1.77rem;
+    --fontFive: 1.33rem;
+    --fontSix: 1rem;
+    --fontSeven: 0.75rem;
+    --fontEight: 0.563rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: lato, helvetica, sans-serif;
+}
+
+/**********************************************
+                    NAV
+***********************************************/
+
+.nav {
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: hsla(200deg, 96%, 90%, 0.6);
+    z-index: 101;
+    border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.5);
+}
+
 .logo {
     width: 10%;
 }
+
+.nav-header {
+
+}
+
+#hamburger-menu {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+/**********************************************
+                MEDIA QUERIES
+***********************************************/
