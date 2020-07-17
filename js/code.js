@@ -19,10 +19,7 @@ const addEventListeners = () => {
 const setFavicon = () => {
     const isDark = detectDarkMode()
     const documentHead = document.querySelector('head')
-    const linkTag = document.createElement('link')
-
-    linkTag.setAttribute('rel', 'icon')
-    linkTag.setAttribute('type', 'image/x-icon')
+    const linkTag = document.getElementById('favicon')
 
     if (isDark) {
         linkTag.setAttribute('href', '/img/favicons/JR-darkTheme.ico')
@@ -30,7 +27,7 @@ const setFavicon = () => {
         linkTag.setAttribute('href', '/img/favicons/JR.ico')
     }
 
-    console.log(documentHead, linkTag)
+    console.log(documentHead)
     documentHead.appendChild(linkTag)
 }
 
