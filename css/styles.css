@@ -57,14 +57,14 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center; 
     position: sticky;
     top: 0;
-    background-color: hsla(200deg, 96%, 90%, 0.6);
+    background-color: hsla(200deg, 96%, 94%, 0.6);
     z-index: 101;
     border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.5);
     padding: 5px;
     font-size: var(--fontSeven);
 }
 
-#nav-logo {
+.nav-logo {
     width: 10%;
     max-width: 100px;
     padding: 1%;
@@ -75,9 +75,9 @@ h1,h2,h3,h4,h5,h6 {
     white-space: nowrap;
 }
 
-#desktop-nav {
+/* #desktop-nav {
     
-}
+} */
 
 .navigation {
     display: flex;
