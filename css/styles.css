@@ -85,7 +85,8 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-around;
     list-style-type: none;
     min-width: 400px;
-    width: 55%;
+    width: 60%;
+    font-size: var(--fontSeven);
 }
 
 .navigation li {
@@ -120,24 +121,18 @@ h1,h2,h3,h4,h5,h6 {
 
 
 @media (min-width: 600px) {
-    .nav-header {
+    .navigation {
         font-size: var(--fontSix);
     }
-    .navigation {
-        font-size: var(--fontSeven);
+}
+
+@media (min-width: 800px) {
+    .nav-header {
+        font-size: var(--fontFive);
     }
 }
 
 @media (min-width: 1000px) {
-    .nav-header {
-        font-size: var(--fontFive);
-    }
-    .navigation {
-        font-size: var(--fontSix);
-    }
-}
-
-@media (min-width: 1500px) {
     .nav-header {
         font-size: var(--fontFour);
     }
