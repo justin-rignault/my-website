@@ -71,7 +71,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-header {
-    font-size: var(--fontFive);
+    font-size: var(--fontSix);
     white-space: nowrap;
 }
 
@@ -121,6 +121,15 @@ h1,h2,h3,h4,h5,h6 {
 
 @media (min-width: 600px) {
     .nav-header {
+        font-size: var(--fontSix);
+    }
+    .navigation {
+        font-size: var(--fontSeven);
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav-header {
         font-size: var(--fontFive);
     }
     .navigation {
@@ -128,18 +137,9 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-@media (min-width: 1000px) {
-    .nav-header {
-        font-size: var(--fontFour);
-    }
-    .navigation {
-        font-size: var(--fontFive);
-    }
-}
-
 @media (min-width: 1500px) {
     .nav-header {
-        font-size: var(--fontThree);
+        font-size: var(--fontFour);
     }
     .navigation {
         font-size: var(--fontFive);
