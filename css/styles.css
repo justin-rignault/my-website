@@ -53,28 +53,52 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav {
     display: flex;
+    justify-content: space-between;
     align-items: center; 
     position: sticky;
     top: 0;
     background-color: hsla(200deg, 96%, 90%, 0.6);
     z-index: 101;
     border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.5);
+    padding: 5px;
+    font-size: var(--fontSeven);
 }
 
-.logo {
+#nav-logo {
     width: 10%;
+    max-width: 100px;
+    padding: 1%;
 }
 
 .nav-header {
+    font-size: var(--fontFive);
+    white-space: nowrap;
+}
+
+#desktop-nav {
+    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    min-width: 400px;
+    width: 55%;
+}
+
+.navigation li {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 
 }
 
-#hamburger-menu {
-
+.nav-icon {
+    padding: 1%;
+    height: 0.9em;
 }
-
-
-
 
 
 
@@ -93,3 +117,31 @@ h1,h2,h3,h4,h5,h6 {
 /**********************************************
                 MEDIA QUERIES
 ***********************************************/
+
+
+@media (min-width: 600px) {
+    .nav-header {
+        font-size: var(--fontFive);
+    }
+    .navigation {
+        font-size: var(--fontSix);
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav-header {
+        font-size: var(--fontFour);
+    }
+    .navigation {
+        font-size: var(--fontFive);
+    }
+}
+
+@media (min-width: 1500px) {
+    .nav-header {
+        font-size: var(--fontThree);
+    }
+    .navigation {
+        font-size: var(--fontFive);
+    }
+}

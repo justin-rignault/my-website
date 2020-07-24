@@ -10,10 +10,41 @@ document.addEventListener('DOMContentLoaded', init)
 function init() {
     addEventListeners()
     setFavicon()
+    setNavbar()
 }
 
 const addEventListeners = () => {
-    
+
+}
+
+const setNavbar = () => {
+    const mb = isMobileBrowser()
+    const desktopNav = document.getElementById('desktop-nav')
+    const mobileNav = document.getElementById('mobile-nav')
+    const navHidden = desktopNav.classList.value.includes('hidden') && mobileNav.classList.value.includes('hidden')
+
+    if(mb && navHidden) {
+        mobileNav.classList.remove('hidden')
+    } else if(!mb && navHidden) {
+        desktopNav.classList.remove('hidden')
+    }
+
+}
+
+const isMobileBrowser = () => {
+    let mobileBrowser = false
+
+    if ( navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i) ) {
+        mobileBrowser = true
+    }
+
+    return mobileBrowser
 }
 
 const setFavicon = () => {
