@@ -94,6 +94,11 @@ h1,h2,h3,h4,h5,h6 {
     cursor: pointer;
 }
 
+.nav-li a {
+    color: black;
+    text-decoration: none;
+}
+
 .nav-li:hover {
     transform: scale(1.15);
     font-weight: 800;
@@ -127,6 +132,51 @@ h1,h2,h3,h4,h5,h6 {
     height: 0.9em;
 }
 
+/*************    modal nav   ***************/
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 5px;
+    background: bisque;
+    z-index: 102;
+}
+
+.mobile-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.5);
+}
+
+.x-icon {
+    font-size: var(--fontTwo);
+    line-height: 0.8;
+}
+
+.mobile-navigation {
+    height: 60%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mobile-nav-li a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--fontFour);
+}
+
+.mobile-nav-icon {
+    height: 0.7em;
+    margin-right: 2%;
+}
+
+
+
 
 
 
@@ -139,7 +189,6 @@ h1,h2,h3,h4,h5,h6 {
 .hidden {
     display: none;
 }
-
 
 /**********************************************
                 MEDIA QUERIES

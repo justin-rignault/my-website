@@ -8,13 +8,9 @@ Description: main javascript file linked to index.html for my personal website
 document.addEventListener('DOMContentLoaded', init)
 
 function init() {
-    addEventListeners()
-    setFavicon()
     setNavbar()
-}
-
-const addEventListeners = () => {
-
+    setFavicon()
+    addEventListeners()
 }
 
 const setNavbar = () => {
@@ -24,11 +20,55 @@ const setNavbar = () => {
     const navHidden = desktopNav.classList.value.includes('hidden') && mobileNav.classList.value.includes('hidden')
 
     if(mb && navHidden) {
-        mobileNav.classList.remove('hidden')
+        show(mobileNav)
     } else if(!mb && navHidden) {
-        desktopNav.classList.remove('hidden')
+        show(desktopNav)
     }
 
+}
+
+const setFavicon = () => {
+    const isDark = detectDarkMode()
+    const documentHead = document.querySelector('head')
+    const linkTag = document.getElementById('favicon')
+
+    if (isDark) {
+        linkTag.setAttribute('href', '/img/favicons/JR-darkTheme.ico')
+    } else {
+        linkTag.setAttribute('href', '/img/favicons/JR.ico')
+    }
+
+    documentHead.appendChild(linkTag)
+}
+
+const addEventListeners = () => {
+    document.getElementById('hamburger-menu').addEventListener('click', showMenu)
+    document.querySelector('.x-icon').addEventListener('click', closeMenu)
+}
+
+const showMenu = () => {
+    const navbar = document.getElementById('mobile-nav')
+    const mobileMenu = document.getElementById('mobile-menu')
+
+    hide(navbar)
+    show(mobileMenu)
+    
+}
+
+const closeMenu = () => {
+    const navbar = document.getElementById('mobile-nav')
+    const mobileMenu = document.getElementById('mobile-menu')
+
+    show(navbar)
+    hide(mobileMenu)
+}
+
+const hide = elem => {
+    elem.classList.add('hidden')
+}
+
+const show = elem => {
+    elem.classList.remove('hidden')
 }
 
 const isMobileBrowser = () => {
@@ -45,20 +85,6 @@ const isMobileBrowser = () => {
     }
 
     return mobileBrowser
-}
-
-const setFavicon = () => {
-    const isDark = detectDarkMode()
-    const documentHead = document.querySelector('head')
-    const linkTag = document.getElementById('favicon')
-
-    if (isDark) {
-        linkTag.setAttribute('href', '/img/favicons/JR-darkTheme.ico')
-    } else {
-        linkTag.setAttribute('href', '/img/favicons/JR.ico')
-    }
-
-    documentHead.appendChild(linkTag)
 }
 
 const detectDarkMode = () => {
