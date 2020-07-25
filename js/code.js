@@ -53,9 +53,19 @@ const setFavicon = () => {
     const linkTag = document.getElementById('favicon')
 
     if (isDark) {
-        linkTag.setAttribute('href', '/img/favicons/JR-darkTheme.ico')
+        try {
+            linkTag.setAttribute('href', '/img/favicons/JR-darkTheme.ico')
+        }
+        catch {
+            linkTag.setAttribute('href', 'https://www.github.com/justin-rignault/my-website/img/favicons/JR-darkTheme.ico')
+        }
     } else {
-        linkTag.setAttribute('href', '/img/favicons/JR.ico')
+        try {
+            linkTag.setAttribute('href', '/img/favicons/JR.ico')
+        }
+        catch {
+            linkTag.setAttribute('href', 'https://www.github.com/justin-rignault/my-website/img/favicons/JR.ico')
+        }
     }
 
     documentHead.appendChild(linkTag)
