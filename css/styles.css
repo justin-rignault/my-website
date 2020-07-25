@@ -149,6 +149,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.5);
+    align-items: center;
 }
 
 .x-icon {
@@ -174,9 +175,6 @@ h1,h2,h3,h4,h5,h6 {
     height: 0.7em;
     margin-right: 2%;
 }
-
-
-
 
 
 
