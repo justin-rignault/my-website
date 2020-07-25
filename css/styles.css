@@ -65,8 +65,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-logo {
-    width: 10%;
-    max-width: 100px;
+    width: 8%;
+    max-width: 90px;
     padding: 1%;
     cursor: pointer;
 }
