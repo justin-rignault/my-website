@@ -68,16 +68,14 @@ h1,h2,h3,h4,h5,h6 {
     width: 10%;
     max-width: 100px;
     padding: 1%;
+    cursor: pointer;
 }
 
 .nav-header {
     font-size: var(--fontSix);
     white-space: nowrap;
+    cursor: pointer;
 }
-
-/* #desktop-nav {
-    
-} */
 
 .navigation {
     display: flex;
@@ -89,11 +87,38 @@ h1,h2,h3,h4,h5,h6 {
     font-size: var(--fontSeven);
 }
 
-.navigation li {
+.nav-li {
     display: flex;
     align-items: center;
     white-space: nowrap;
+    cursor: pointer;
+}
 
+.nav-li:hover {
+    transform: scale(1.1);
+    font-weight: 800;
+}
+
+.nav-li:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: hsla(0deg, 0%, 0%, 0.4);
+    height: 1px;
+    transform: scale(1.1);
+}
+
+.nav-li:hover:after {
+    width: 75%;
+}
+
+.nav-li, .nav-li:before, .nav-li:after{
+    transition: all .5s;
 }
 
 .nav-icon {
