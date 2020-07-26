@@ -11,7 +11,6 @@ function init() {
     setNavbar()
     setFavicon()
     addEventListeners()
-    copyrightMessage()
 }
 
 const setNavbar = () => {
@@ -92,11 +91,4 @@ const isMobileBrowser = () => {
 const detectDarkMode = () => {
     const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     return isDark
-}
-
-const copyrightMessage = () => {
-    const date = new Date()
-    let year = date.getFullYear()
-    const copyrightTag = document.getElementById('copyright')
-    copyrightTag.innerHTML = `&copy; Copyright ${year} Justin Rignault. All Rights Reserved`
 }
