@@ -44,6 +44,7 @@ const setFavicon = () => {
 const addEventListeners = () => {
     document.getElementById('hamburger-menu').addEventListener('click', showMenu)
     document.querySelector('.x-icon').addEventListener('click', closeMenu)
+    document.querySelectorAll('.mobile-nav-li').forEach( link => link.addEventListener('click', closeMenu) )
 }
 
 const showMenu = () => {
