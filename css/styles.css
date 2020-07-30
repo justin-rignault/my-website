@@ -196,7 +196,7 @@ header {
 
 .header-h1 {
     color: white;
-    font-family: ubuntu;
+    font-family: 'ubuntu';
     font-size: var(--fontFour);
 }
 
@@ -206,7 +206,18 @@ header {
     font-size: var(--fontFive);
 }
 
+.header-button {
+    font-family: 'lato';
+    font-size: var(--fontSix);
+    margin-top: 5%;
+    color: hsla(200deg, 100%, 20%, 1);
+    padding: 3% 5%;
+    border-radius: 15px;
+}
 
+#down-arrow {
+    
+}
 
 
 
@@ -241,5 +252,7 @@ header {
 }
 
 @media(min-width: 1200px) {
-
+    .header-button {
+        letter-spacing: 1px;
+    }
 }
