@@ -9,6 +9,8 @@ Description: main css file linked to index.html for my personal website
 ***********************************************/
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 /**********************************************
                 DEFAULTS
@@ -44,7 +46,7 @@ html {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: lato, helvetica, sans-serif;
+    font-family: lato, helvetica, sans-serif; 
 }
 
 /**********************************************
@@ -128,8 +130,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav-icon {
     margin-right: 3%;
-    padding: 1%;
-    height: 0.9em;
+    height: 0.75em;
 }
 
 /*************    modal nav   ***************/
@@ -175,8 +176,35 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: 2%;
 }
 
+/**********************************************
+                    HEADER
+***********************************************/
 
+header {
+    background: url(../img/backgrounds/background-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    text-align: center;
+}
 
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header-h1 {
+    color: white;
+    font-family: ubuntu;
+    font-size: var(--fontThree);
+}
+
+.header-h2 {
+    color: white;
+    font-family: 'PT sans';
+    font-size: var(--fontFive);
+}
 
 
 
@@ -191,23 +219,27 @@ h1,h2,h3,h4,h5,h6 {
 ***********************************************/
 
 
-@media (min-width: 600px) {
+@media (min-width: 576px) {
     .navigation {
         font-size: var(--fontSix);
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .nav-header {
         font-size: var(--fontFive);
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
     .nav-header {
         font-size: var(--fontFour);
     }
     .navigation {
         font-size: var(--fontFive);
     }
+}
+
+@media(min-width: 1200px) {
+
 }
