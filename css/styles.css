@@ -197,7 +197,7 @@ header {
 .header-h1 {
     color: white;
     font-family: ubuntu;
-    font-size: var(--fontThree);
+    font-size: var(--fontFour);
 }
 
 .header-h2 {
