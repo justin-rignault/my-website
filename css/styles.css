@@ -60,13 +60,12 @@ h1,h2,h3,h4,h5,h6 {
     position: sticky;
     top: 0;
     /* background-color: hsla(200deg, 96%, 94%, 0.65); */
-    background-color: hsl(33deg, 25%, 88%);
+    background-color: hsla(33deg, 25%, 88%, 0.65);
     z-index: 1;
     border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.7);
     padding: 5px;
     font-size: var(--fontSeven);
 }
-
 .nav-logo {
     width: 8%;
     max-width: 90px;
