@@ -213,6 +213,7 @@ header {
     font-family: 'lato';
     font-size: var(--fontSix);
     color: hsla(200deg, 100%, 20%, 1);
+    background-color: hsl(33deg, 25%, 88%);
     padding: 3% 5%;
     border-radius: 15px;
 }
@@ -222,6 +223,11 @@ header {
     bottom: 10px;
     left: calc(50% - 55px / 2);
 }
+
+
+
+
+
 
 
 
