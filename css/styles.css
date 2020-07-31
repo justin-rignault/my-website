@@ -60,7 +60,7 @@ h1,h2,h3,h4,h5,h6 {
     position: sticky;
     top: 0;
     background-color: hsla(200deg, 96%, 94%, 0.65);
-    z-index: 101;
+    z-index: 1;
     border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.7);
     padding: 5px;
     font-size: var(--fontSeven);
@@ -143,6 +143,7 @@ h1,h2,h3,h4,h5,h6 {
     left: 0;
     padding: 0 5px;
     background: bisque;
+    z-index: 1;
 }
 
 .mobile-top {
