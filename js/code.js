@@ -5,8 +5,6 @@ Description: main javascript file linked to index.html for my personal website
 ****************************************************************************/
 'use strict'
 
-document.addEventListener('DOMContentLoaded', init)
-
 function init() {
     setNavbar()
     setFavicon()
@@ -92,3 +90,7 @@ const detectDarkMode = () => {
     const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     return isDark
 }
+
+
+
+document.addEventListener('DOMContentLoaded', init)
