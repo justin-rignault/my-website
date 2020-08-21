@@ -7,9 +7,7 @@ Description: main css file linked to index.html for my personal website
 /**********************************************
                 IMPORTS
 ***********************************************/
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 /**********************************************
@@ -22,15 +20,10 @@ Description: main css file linked to index.html for my personal website
     box-sizing: border-box;
 }
 
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Open sans', helvetica, sans-serif;
+    font-family: 'PT sans', helvetica, sans-serif;
     /*scroll-behavior: smooth; */
 }
 
@@ -45,188 +38,28 @@ html {
     --fontEight: 0.563rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: lato, helvetica, sans-serif; 
-}
-
 /**********************************************
                     NAV
 ***********************************************/
 
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    background-color: hsla(177deg, 86%, 96%, 90%);
+    height: 3rem;
+    padding: 1rem;
     position: sticky;
     top: 0;
-    /* background-color: hsla(200deg, 96%, 94%, 0.65); */
-    background-color: hsla(33deg, 25%, 88%, 0.65);
-    z-index: 1;
-    border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.7);
-    padding: 5px;
-    font-size: var(--fontSeven);
-}
-.nav-logo {
-    width: 8%;
-    max-width: 90px;
-    padding: 1%;
-    cursor: pointer;
 }
 
-.nav-header {
-    font-size: var(--fontSix);
-    white-space: nowrap;
-    cursor: pointer;
+.logo {
+    width: 30px;
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-    min-width: 400px;
-    width: 60%;
-    font-size: var(--fontSeven);
-}
-
-.nav-li {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.nav-li a {
-    color: black;
-    text-decoration: none;
-}
-
-.nav-li:hover {
-    transform: scale(1.15);
-    font-weight: 800;
-}
-
-.nav-li:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: hsla(0deg, 0%, 0%, 0.4);
-    height: 1px;
-    transform: scale(1.1);
-}
-
-.nav-li:hover:after {
-    width: 75%;
-}
-
-.nav-li, .nav-li:before, .nav-li:after{
-    transition: all .5s;
-}
-
-.nav-icon {
-    margin-right: 3%;
-    height: 0.75em;
-}
-
-/*************    modal nav   ***************/
-
-#mobile-menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 0 5px;
-    background: hsl(33deg, 100%, 88%);
-    z-index: 1;
-}
-
-.mobile-top {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid hsla(0deg, 0%, 10%, 0.5);
-    align-items: center;
-}
-
-.x-icon {
-    font-size: var(--fontTwo);
-    line-height: 0.8;
-}
-
-.mobile-navigation {
-    height: 75%;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.mobile-nav-li a {
-    color: black;
-    text-decoration: none;
-    font-size: var(--fontFour);
-}
-
-.mobile-nav-icon {
-    height: 0.7em;
-    margin-right: 2%;
-}
-
-/**********************************************
-                    HEADER
-***********************************************/
-
-header {
-    background: url(../img/backgrounds/background-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 40px);
-    text-align: center;
-}
-
-.overlay {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.header-h1 {
-    color: white;
-    font-family: 'ubuntu';
-    font-size: var(--fontFour);
-}
-
-.header-h2 {
-    color: white;
-    font-family: 'PT sans';
+nav > h2 {
     font-size: var(--fontFive);
 }
-
-.header-button {
-    font-family: 'lato';
-    font-size: var(--fontSix);
-    /* color: hsla(200deg, 100%, 20%, 1); */
-    background-color: hsl(33deg, 25%, 88%);
-    padding: 3% 5%;
-    border-radius: 15px;
-}
-
-#down-arrow {
-    position: absolute;
-    bottom: 10px;
-    left: calc(50% - 55px / 2);
-}
-
-
-
-
-
 
 
 
@@ -240,40 +73,13 @@ header {
 
 
 @media (min-width: 576px) {
-    .navigation {
-        font-size: var(--fontSix);
-    }
-    header {
-        height: calc(100vh - 55px);
-    }
 }
 
 @media (min-width: 768px) {
-    .nav-header {
-        font-size: var(--fontFive);
-    }
-    header {
-        height: calc(100vh - 70px);
-    }
 }
 
 @media (min-width: 992px) {
-    .nav-header {
-        font-size: var(--fontFour);
-    }
-    .navigation {
-        font-size: var(--fontFive);
-    }
-    header {
-        height: calc(100vh - 90px);
-    }
 }
 
 @media(min-width: 1200px) {
-    .header-button {
-        letter-spacing: 1px;
-    }
-    header {
-        height: calc(100vh - 100px);
-    }
 }
