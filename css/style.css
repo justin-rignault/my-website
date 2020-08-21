@@ -54,11 +54,11 @@ nav {
 }
 
 .logo {
-    width: 30px;
+    width: 2rem;
 }
 
 nav > h2 {
-    font-size: var(--fontFive);
+    font-size: var(--fontSix);
 }
 
 
