@@ -42,11 +42,11 @@ html {
                     NAV
 ***********************************************/
 
-nav {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsla(177deg, 86%, 96%, 90%);
+    background-color: hsla(177deg, 34%, 75%, 90%);
     height: 3rem;
     padding: 1rem;
     position: sticky;
