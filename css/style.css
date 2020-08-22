@@ -24,7 +24,7 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: 'PT sans', helvetica, sans-serif;
-    /*scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 h1, h2 {
@@ -132,6 +132,9 @@ nav a {
 #portfolio {
     min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 0.01%, rgba(166, 210, 208, 0) 30.21%, rgba(166, 210, 208, 0.05) 33.33%, rgba(166, 173, 210, 0.1) 99.99%, rgba(166, 210, 208, 0.1) 100%);
 }
 
