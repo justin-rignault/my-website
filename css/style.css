@@ -50,7 +50,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsla(177deg, 33%, 74%, 15%);
+    background-color: rgba(242,248,248, 95%);
     padding: 0.3rem 1rem;
     position: sticky;
     top: 0;
@@ -119,10 +119,18 @@ nav a {
 }
 
 
+/**********************************************
+                PORTFOLIO
+***********************************************/
 
+#portfolio {
+    min-height: 100vh;
+    text-align: center;
+}
 
-
-
+#portfolio h1 {
+    font-size: var(--fontOne);
+}
 
 
 .desktop {
@@ -165,7 +173,7 @@ nav a {
     }
 
     header {
-        padding: 0 2rem;
+        padding: 0.3rem 2rem;
     }
 
     header > h2 {
@@ -198,7 +206,7 @@ nav a {
 
 @media(min-width: 1200px) {
     header {
-        padding: 0 3rem;
+        padding: 0.3rem 3rem;
     }
     nav {
         width: 40%;
