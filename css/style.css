@@ -46,7 +46,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsla(177deg, 34%, 75%, 90%);
+    background-color: hsla(177deg, 33%, 74%, 15%);
     height: 3rem;
     padding: 1rem;
     position: sticky;
@@ -57,16 +57,14 @@ header {
     width: 2rem;
 }
 
-nav > h2 {
+header > h2 {
     font-size: var(--fontSix);
+    font-family: 'cabin', helvetica, sans-serif;
 }
 
-
-
-.hidden {
+.desktop {
     display: none;
 }
-
 /**********************************************
                 MEDIA QUERIES
 ***********************************************/
@@ -76,10 +74,51 @@ nav > h2 {
 }
 
 @media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+
+    header > h2 {
+        position: absolute;
+        left: 100px;
+    }
+
+    nav {
+        width: 50%;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav li {
+        list-style-type: none;
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 992px) {
 }
 
 @media(min-width: 1200px) {
+    header {
+        padding: 0 3rem;
+    }
+    nav {
+        width: 40%;
+    }
 }
