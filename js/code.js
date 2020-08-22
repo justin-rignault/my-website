@@ -8,7 +8,6 @@ Description: main javascript file linked to index.html for my personal website
 function init() {
     setFavicon()
     addEventListeners()
-    addLatestWorks()
 }
 
 const setFavicon = () => {
@@ -26,20 +25,6 @@ const setFavicon = () => {
 }
 
 const addEventListeners = () => {
-}
-
-const addLatestWorks = () => {
-    const div = document.getElementById('works-div')
-    const img = document.createElement('img')
-    const ballsDiv = document.createElement('div')
-    const p = document.createElement('p')
-    const numberOfWorks = 4
-    let currentWork = 1
-
-    
-
-
-
 }
 
 const isMobileBrowser = () => {
