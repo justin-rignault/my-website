@@ -91,6 +91,8 @@ nav a {
 
 .overlay > h1 {
     font-size: var(--fontOne);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .home-img {
@@ -126,6 +128,7 @@ nav a {
 #portfolio {
     min-height: 100vh;
     text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 0.01%, rgba(166, 210, 208, 0) 30.21%, rgba(166, 210, 208, 0.05) 33.33%, rgba(166, 173, 210, 0.1) 99.99%, rgba(166, 210, 208, 0.1) 100%);
 }
 
 #portfolio h1 {
