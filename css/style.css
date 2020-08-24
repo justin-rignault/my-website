@@ -140,7 +140,6 @@ nav a {
 
 #portfolio > h1 {
     font-size: 4rem;
-    letter-spacing: 1px;
 }
 
 
@@ -217,12 +216,14 @@ nav a {
 #about {
     min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
 #about > h1 {
     font-size: 4rem;
-    letter-spacing: 1px;
 }
 
 
