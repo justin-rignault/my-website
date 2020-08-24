@@ -215,6 +215,13 @@ nav a {
 
 #about {
     min-height: 100vh;
+    text-align: center;
+}
+
+
+#about > h1 {
+    font-size: 4rem;
+    letter-spacing: 1px;
 }
 
 
