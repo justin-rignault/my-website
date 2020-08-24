@@ -130,7 +130,7 @@ nav a {
 ***********************************************/
 
 #portfolio {
-    min-height: 65vh;
+    min-height: 90vh;
     text-align: center;
     display: flex;
     flex-direction: column;
