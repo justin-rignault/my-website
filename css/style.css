@@ -188,7 +188,7 @@ nav a {
 }
 
 .swiper-pagination-bullet-active {
-    background: #066660;
+    background: hsl(176deg, 90%, 21%);
 }
 /**********************************************
                     ABOUT
