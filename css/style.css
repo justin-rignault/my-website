@@ -145,9 +145,8 @@ nav a {
     font-size: 4rem;
 }
 
-.latest-works {
+.swiper-container {
 	width: 90%;
-	height: 100%;
 }
 
 .swiper-wrapper {
@@ -197,14 +196,6 @@ nav a {
     min-height: 100vh;
     text-align: center;
     padding: 0 5%;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-
 }
 
 .about-h1 {

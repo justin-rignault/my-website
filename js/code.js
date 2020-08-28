@@ -9,6 +9,7 @@ function init() {
     setFavicon()
     addEventListeners()
     activateSwiper()
+    activateSwiper2()
 }
 
 const setFavicon = () => {
