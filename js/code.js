@@ -41,11 +41,11 @@ const activateSwiper = () => {
 
 const activateSwiper2 = () => {
     const swiper = new Swiper('.swiper-container2', {
-        spaceBetween: 100,
-        navigation: {
-            nextEl: 'swipe-skills'
-        }
+        spaceBetween: 300
       });
+    document.querySelector('.swipe-skills').addEventListener('click', () => {
+        swiper.slideNext()
+    })
 }
 
 const isMobileBrowser = () => {
