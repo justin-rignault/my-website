@@ -205,6 +205,8 @@ nav a {
 
 .swiper-container2 {
     height: 90vh;
+    overflow: hidden;
+    margin: auto;
 }
 
 .picture-of-me {
@@ -215,7 +217,6 @@ nav a {
     border-radius: 50%;
     margin: auto;
 }
-
 
 .about-p {
     font-size: var(--fontSeven);
