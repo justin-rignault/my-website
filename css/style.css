@@ -188,6 +188,7 @@ nav a {
 .swiper-pagination-bullet-active {
     background: hsl(176deg, 90%, 21%);
 }
+
 /**********************************************
                     ABOUT
 ***********************************************/
@@ -200,11 +201,10 @@ nav a {
 
 .about-h1 {
     font-size: 4rem;
-    height: 10vh;
 }
 
 .swiper-container2 {
-    height: 90vh;
+    min-height: 115vh;
     overflow: hidden;
 }
 
@@ -219,6 +219,7 @@ nav a {
 
 .about-p {
     font-size: var(--fontSeven);
+    margin: 5% 0;
 }
 
 .swipe-skills {
@@ -244,6 +245,49 @@ nav a {
     margin: auto;
 }
 
+.my-skills-div {
+    text-align: left;
+    padding: 0 10%;
+    margin-top: 5%;
+    height: 125%;
+}
+
+.skill-div > h2 {
+    font-size: var(--fontFive);
+    margin-bottom: 5%;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
+}
+
+.skill-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+}
+
+.skill > p {
+    font-size: var(--fontSix);
+}
+
+/**********************************************
+                CONTACT
+***********************************************/
+
+#contact {
+    min-height: 100vh;
+    text-align: center;
+    background: hsla(177deg, 33%, 74%, 15%);
+}
+
+#contact > h1 {
+    font-size: 4rem;
+}
 
 
 
