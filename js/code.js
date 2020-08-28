@@ -38,6 +38,12 @@ const activateSwiper = () => {
       });
 }
 
+const activateSwiper2 = () => {
+    const swiper = new Swiper('.swiper-container2', {
+        spaceBetween: 100
+      });
+}
+
 const isMobileBrowser = () => {
     let mobileBrowser = false
 
