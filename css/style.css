@@ -151,7 +151,7 @@ nav a {
 }
 
 .swiper-wrapper {
-    height: 70vh;
+    height: 80vh;
 }
 
 .swiper-slide {
@@ -159,6 +159,12 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.swiper-slide > h2 {
+    font-size: var(--fontThree);
+    margin-bottom: -10%;
+    color: #444;
 }
 
 .swiper-slide > p {
