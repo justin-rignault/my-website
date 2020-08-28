@@ -150,7 +150,7 @@ nav a {
 }
 
 .swiper-wrapper {
-    height: 80vh;
+    height: 90vh;
 }
 
 .swiper-slide {
@@ -200,6 +200,11 @@ nav a {
 
 .about-h1 {
     font-size: 4rem;
+    height: 10vh;
+}
+
+.swiper-container2 {
+    height: 90vh;
 }
 
 .picture-of-me {
