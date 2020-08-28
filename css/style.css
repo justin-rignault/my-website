@@ -58,6 +58,7 @@ header {
     padding: 0.3rem 1rem;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .logo {
@@ -106,6 +107,7 @@ nav a {
 .overlay > p {
     margin: 0 20%;
     color: rgba(218, 218, 218, 0.8);
+    text-align: justify;
 }
 
 .overlay > div > p {
@@ -130,18 +132,49 @@ nav a {
 ***********************************************/
 
 #portfolio {
-    min-height: 90vh;
+    min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 0.01%, rgba(166, 210, 208, 0) 30.21%, rgba(166, 210, 208, 0.05) 33.33%, rgba(166, 173, 210, 0.1) 99.99%, rgba(166, 210, 208, 0.1) 100%);
+    position: relative;
 }
 
 #portfolio > h1 {
     font-size: 4rem;
 }
 
+.swiper-container {
+	width: 90%;
+	height: 100%;
+}
+
+.swiper-wrapper {
+    height: 70vh;
+}
+
+.swiper-slide {
+	text-align: center;
+}
+
+.swiper-slide > p {
+    margin-top: 10%;
+    text-align: justify;
+}
+
+.swiper-img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: inherit;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 10px !important;
+    padding: 8px;
+}
 /**********************************************
                     ABOUT
 ***********************************************/

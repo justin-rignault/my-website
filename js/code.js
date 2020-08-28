@@ -8,6 +8,7 @@ Description: main javascript file linked to index.html for my personal website
 function init() {
     setFavicon()
     addEventListeners()
+    activateSwiper()
 }
 
 const setFavicon = () => {
@@ -25,6 +26,16 @@ const setFavicon = () => {
 }
 
 const addEventListeners = () => {
+}
+
+const activateSwiper = () => {
+    const swiper = new Swiper('.swiper-container', {
+        spaceBetween: 100,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
 }
 
 const isMobileBrowser = () => {
