@@ -204,7 +204,7 @@ nav a {
 }
 
 .swiper-container2 {
-    min-height: 115vh;
+    min-height: 105vh;
     overflow: hidden;
 }
 
@@ -229,6 +229,7 @@ nav a {
     margin: auto;
     animation: move-right 2s infinite alternate linear;
     cursor: pointer;
+    color: hsl(176deg, 90%, 21%);
 }
 
 .swipe-skills:hover {
@@ -237,7 +238,6 @@ nav a {
 
 .swipe-skills > span {
     font-size: var(--fontSeven);
-    color: #444;
 }
 
 .swipe-skills > img {
@@ -249,7 +249,6 @@ nav a {
     text-align: left;
     padding: 0 10%;
     margin-top: 5%;
-    height: 125%;
 }
 
 .skill-div > h2 {
