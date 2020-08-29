@@ -54,9 +54,9 @@ const activateSwiper3 = () => {
     const swiper = new Swiper('.swiper-container3', {
         spaceBetween: 300
       });
-    // document.querySelector('.swipe-skills').addEventListener('click', () => {
-    //     swiper.slideNext()
-    // })
+    document.querySelector('.swipe-form').addEventListener('click', () => {
+        swiper.slideNext()
+    })
 }
 
 const isMobileBrowser = () => {

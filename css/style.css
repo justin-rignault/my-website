@@ -204,8 +204,12 @@ nav a {
     font-size: 4rem;
 }
 
+.about-me-div{
+    height: 130%;
+}
+
 .swiper-container2 {
-    height: 115vh;
+    height: 120vh;
     overflow: hidden;
 }
 
@@ -219,7 +223,7 @@ nav a {
 }
 
 .about-p {
-    font-size: var(--fontSeven);
+    font-size: var(--fontSix);
     margin: 5% 0;
 }
 
@@ -295,11 +299,45 @@ nav a {
 
 #contact > h1 {
     font-size: 3.8rem;
+    padding-top: 5%;
+}
+
+#contact > p {
+    padding-bottom: 5%;
+}
+
+.contact-swiper-wraper {
+    /* height: inherit; */
+}
+
+.contact-swiper-slide {
+    padding: 0 5%;
+    text-align: justify;
 }
 
 
+.swipe-form {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    margin: 0 auto;
+    animation: move-right 2s infinite alternate linear;
+    cursor: pointer;
+    color: hsl(176deg, 90%, 21%);
+}
 
+.swipe-form:hover {
+    animation-play-state: paused;
+}
 
+.swipe-form > span {
+    font-size: var(--fontSeven);
+}
+
+.swipe-form > img {
+    width: 80%;
+    margin: auto;
+}
 
 /**********************************************
                     FOOTER
