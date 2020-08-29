@@ -291,7 +291,8 @@ nav a {
 #contact {
     min-height: 100vh;
     text-align: center;
-    background: hsla(177deg, 33%, 74%, 15%);
+    background: url(../img/background-2.png);
+    background-size: contain;
 }
 
 .swiper-container3{
