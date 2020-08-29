@@ -10,6 +10,7 @@ function init() {
     addEventListeners()
     activateSwiper()
     activateSwiper2()
+    copyrightMessage()
 }
 
 const setFavicon = () => {
@@ -69,6 +70,12 @@ const detectDarkMode = () => {
     return isDark
 }
 
-
+const copyrightMessage = () => {
+    const date = new Date()
+    let year = date.getFullYear()
+    const copyrightTag = document.getElementById('copyright')
+    console.log(copyrightTag)
+    copyrightTag.innerHTML = `&copy; Copyright ${year} - Justin Rignault. All Rights Reserved`
+}
 
 document.addEventListener('DOMContentLoaded', init)
