@@ -231,7 +231,7 @@ nav a {
     display: flex;
     flex-direction: column;
     width: 10%;
-    margin: auto;
+    margin: 0 auto;
     animation: move-right 2s infinite alternate linear;
     cursor: pointer;
     color: hsl(176deg, 90%, 21%);
@@ -284,9 +284,6 @@ nav a {
     font-size: var(--fontSix);
 }
 
-
-
-
 /**********************************************
                     CONTACT
 ***********************************************/
@@ -295,6 +292,10 @@ nav a {
     min-height: 100vh;
     text-align: center;
     background: hsla(177deg, 33%, 74%, 15%);
+}
+
+.swiper-container3{
+    overflow: hidden;
 }
 
 #contact > h1 {
@@ -307,7 +308,7 @@ nav a {
 }
 
 .contact-swiper-wraper {
-    /* height: inherit; */
+    height: 80vh;
 }
 
 .contact-swiper-slide {
@@ -315,6 +316,45 @@ nav a {
     text-align: justify;
 }
 
+.email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email > img {
+    width: 5%;
+    margin-right: -10%;
+}
+
+.social {
+    text-align: center;
+    height: 35%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.whatsapp, .sms {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.whatsapp > img, .sms > img {
+    margin-right: 1rem;
+}
 
 .swipe-form {
     display: flex;
@@ -324,6 +364,7 @@ nav a {
     animation: move-right 2s infinite alternate linear;
     cursor: pointer;
     color: hsl(176deg, 90%, 21%);
+    text-align: center;
 }
 
 .swipe-form:hover {
