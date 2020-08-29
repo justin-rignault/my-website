@@ -328,6 +328,10 @@ nav a {
     margin-right: -10%;
 }
 
+.email > a {
+    color: #066660;
+}
+
 .social {
     text-align: center;
     height: 35%;
@@ -355,6 +359,11 @@ nav a {
 
 .whatsapp > img, .sms > img {
     margin-right: 1rem;
+}
+
+.whatsapp > span, .sms > span {
+    text-decoration: none;
+    color: #444;
 }
 
 .swipe-form {
