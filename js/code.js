@@ -10,6 +10,7 @@ function init() {
     addEventListeners()
     activateSwiper()
     activateSwiper2()
+    activateSwiper3()
     copyrightMessage()
 }
 
@@ -32,7 +33,7 @@ const addEventListeners = () => {
 
 const activateSwiper = () => {
     const swiper = new Swiper('.swiper-container', {
-        spaceBetween: 100,
+        spaceBetween: 200,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -47,6 +48,15 @@ const activateSwiper2 = () => {
     document.querySelector('.swipe-skills').addEventListener('click', () => {
         swiper.slideNext()
     })
+}
+
+const activateSwiper3 = () => {
+    const swiper = new Swiper('.swiper-container3', {
+        spaceBetween: 300
+      });
+    // document.querySelector('.swipe-skills').addEventListener('click', () => {
+    //     swiper.slideNext()
+    // })
 }
 
 const isMobileBrowser = () => {

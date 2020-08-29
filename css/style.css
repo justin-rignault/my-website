@@ -164,6 +164,7 @@ nav a {
     font-size: var(--fontThree);
     margin-bottom: -10%;
     color: #444;
+    font-weight: normal;
 }
 
 .swiper-slide > p {
