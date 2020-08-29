@@ -291,8 +291,9 @@ nav a {
 #contact {
     min-height: 100vh;
     text-align: center;
-    background: url(../img/background-2.png);
+    background: url(../img/background-2.png) no-repeat;
     background-size: contain;
+    background-color: rgba(166, 210, 208, 0.1);
 }
 
 .swiper-container3{
@@ -301,7 +302,8 @@ nav a {
 
 #contact > h1 {
     font-size: 3.8rem;
-    padding-top: 5%;
+    padding-top: 1%;
+    margin-bottom: 10%;
 }
 
 #contact > p {
