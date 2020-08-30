@@ -19,10 +19,12 @@ const setSectionHeights = () => {
     const home = document.getElementById('home')
     const portfolio = document.getElementById('portfolio')
     const contact = document.getElementById('contact')
+    const swiperContainer = document.querySelector('.swiper-container3')
 
     home.style.height = `${window.innerHeight - 30}px`
     portfolio.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
+    swiperContainer.style.height = `${window.innerHeight - 150}px`
 }
 
 const setFavicon = () => {
