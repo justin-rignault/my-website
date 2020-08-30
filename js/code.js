@@ -6,12 +6,23 @@ Description: main javascript file linked to index.html for my personal website
 'use strict'
 
 function init() {
+    setSectionHeights()
     setFavicon()
     addEventListeners()
     activateSwiper()
     activateSwiper2()
     activateSwiper3()
     copyrightMessage()
+}
+
+const setSectionHeights = () => {
+    const home = document.getElementById('home')
+    const portfolio = document.getElementById('portfolio')
+    const contact = document.getElementById('contact')
+
+    home.style.height = `${window.innerHeight - 30}px`
+    portfolio.style.height = `${window.innerHeight}px`
+    contact.style.minHeight = `${window.innerHeight}px`
 }
 
 const setFavicon = () => {
@@ -84,7 +95,6 @@ const copyrightMessage = () => {
     const date = new Date()
     let year = date.getFullYear()
     const copyrightTag = document.getElementById('copyright')
-    console.log(copyrightTag)
     copyrightTag.innerHTML = `&copy; Copyright ${year} - Justin Rignault. All Rights Reserved`
 }
 
