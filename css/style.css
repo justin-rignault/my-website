@@ -288,13 +288,9 @@ nav a {
 }
 
 .swiper-container3 {
-    overflow-x: hidden;
-}
-/*  */
-.contact-swiper-wraper {
     overflow: hidden;
 }
-/*  */
+
 #contact > h1 {
     font-size: 3.8rem;
     padding-top: 1%;
