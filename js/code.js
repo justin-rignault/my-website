@@ -21,7 +21,7 @@ const setSectionHeights = () => {
     const contact = document.getElementById('contact')
 
     home.style.height = `${window.innerHeight - 30}px`
-    portfolio.style.height = `${window.innerHeight}px`
+    portfolio.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
 }
 
