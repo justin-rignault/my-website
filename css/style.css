@@ -25,6 +25,7 @@ html {
     line-height: 1.5;
     font-family: 'PT sans', helvetica, sans-serif;
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 
 h1, h2 {
@@ -84,6 +85,7 @@ nav a {
     text-align: center;
     color: white;
     height: 95vh;
+    height: -webkit-fill-available;
 }
 
 .overlay {
@@ -231,7 +233,7 @@ nav a {
     display: flex;
     flex-direction: column;
     width: 10%;
-    margin: 0 auto;
+    margin: auto;
     animation: move-right 2s infinite alternate linear;
     cursor: pointer;
     color: hsl(176deg, 90%, 21%);
@@ -365,7 +367,7 @@ nav a {
 
 .whatsapp > span, .sms > span {
     text-decoration: none;
-    color: #444;
+    color: #777;
 }
 
 .swipe-form {
