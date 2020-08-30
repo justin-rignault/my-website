@@ -149,10 +149,6 @@ nav a {
     width: 90%;
 }
 
-.swiper-wrapper {
-    overflow: hidden;
-}
-
 .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -291,10 +287,14 @@ nav a {
     background-color: rgba(166, 210, 208, 0.1);
 }
 
-.swiper-container3{
+.swiper-container3 {
     overflow-x: hidden;
 }
-
+/*  */
+.contact-swiper-wraper {
+    overflow: hidden;
+}
+/*  */
 #contact > h1 {
     font-size: 3.8rem;
     padding-top: 1%;
