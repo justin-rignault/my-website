@@ -141,28 +141,26 @@ nav a {
 
 #portfolio > h1 {
     font-size: 4rem;
+    flex: 1;
 }
 
 .swiper-container {
-	width: 90%;
-}
-
-.swiper-wrapper {
-    height: 90vh;
+    flex: 5;
+    width: 90%;
 }
 
 .swiper-slide {
-	text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 5%;
 }
 
 .swiper-slide > h2 {
     font-size: var(--fontThree);
-    margin-bottom: -10%;
     color: #444;
     font-weight: normal;
+    margin-bottom: 15%;
 }
 
 .swiper-slide > p {
@@ -171,10 +169,12 @@ nav a {
 
 .swiper-img {
     width: 100%;
+    margin-bottom: 15%;
 }
 
 .swiper-pagination {
     position: inherit;
+    margin-top: 25%;
 }
 
 .swiper-pagination-bullet {
@@ -201,12 +201,7 @@ nav a {
     font-size: 4rem;
 }
 
-.about-me-div{
-    height: 130%;
-}
-
 .swiper-container2 {
-    height: 120vh;
     overflow: hidden;
 }
 
@@ -293,7 +288,7 @@ nav a {
 }
 
 .swiper-container3{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #contact > h1 {
