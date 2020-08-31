@@ -365,6 +365,7 @@ nav a {
     cursor: pointer;
     color: hsl(176deg, 90%, 21%);
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .swipe-form:hover {
@@ -379,6 +380,73 @@ nav a {
     width: 80%;
     margin: auto;
 }
+
+/****************** Form **********************/
+
+.form {
+    max-width: 700px;
+    margin-bottom: 5%;
+}
+
+.form-field {
+    position: relative;
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-field > input, .form-field > label {
+    padding: 1.2rem;
+    margin: 0.5rem;
+    width: 100%;
+}
+
+.form-field > input {
+    border: 1px solid #066660;
+    border-radius: 15px;
+    outline: none;
+}
+  
+.form-field > label {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    color: #ccc;
+}
+
+input:focus + label, input:valid + label, #message:focus + label {
+    color: #066660;
+    width: auto;
+    height: 1.3em;
+    padding: 0 0.5rem;
+    margin: 0;
+    background: white;
+    transition: 0.2s ease-in-out;
+    top: 0;
+    left: 2rem;
+}
+
+#message {
+    border: 1px solid #066660;
+    border-radius: 15px;
+    padding: 1.2rem;
+    margin: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+#submit {
+    width: 100%;
+    margin: 0.5rem;
+    background: #077972;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+
 
 /**********************************************
                     FOOTER

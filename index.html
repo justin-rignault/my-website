@@ -197,7 +197,22 @@
                     </div>
                 </div>
                 <div class="swiper-slide contact-swiper-slide">
-                    <form>
+                    <form class="form">
+                        <div class="form-field" id="name-field">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-field" id="email-field">
+                            <input type="text" name="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-field" id="message-field">
+                            <textarea name="message" id="message" rows="12" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div id="submit-button">
+                            <input type="submit" id="submit" value="Send Message">
+                        </div>
                     </form>
                 </div>
             </div>
