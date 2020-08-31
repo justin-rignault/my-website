@@ -153,10 +153,12 @@ aside {
 
 .nav-menu li a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
     color: white;
     font-size: var(--fontFive);
+    display: flex;
+    justify-content: center;
+    padding: 10%;
 }
 
 /**********************************************

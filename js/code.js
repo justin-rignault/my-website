@@ -26,7 +26,7 @@ const setSectionHeights = () => {
     portfolio.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
     swiperContainer.style.height = `${window.innerHeight - 150}px`
-    aside.style.height = `${window.innerHeight}px`
+    aside.style.height = `${window.innerHeight * 0.6}px`
 }
 
 const setFavicon = () => {
