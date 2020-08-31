@@ -20,11 +20,13 @@ const setSectionHeights = () => {
     const portfolio = document.getElementById('portfolio')
     const contact = document.getElementById('contact')
     const swiperContainer = document.querySelector('.swiper-container3')
+    const aside = document.querySelector('aside')
 
     home.style.height = `${window.innerHeight - 30}px`
     portfolio.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
     swiperContainer.style.height = `${window.innerHeight - 150}px`
+    aside.style.height = `${window.innerHeight / 2}px`
 }
 
 const setFavicon = () => {
@@ -42,6 +44,13 @@ const setFavicon = () => {
 }
 
 const addEventListeners = () => {
+    const menu = document.getElementById('menu')
+    menu.addEventListener('click', menuClick)
+}
+
+const menuClick = ev => {
+    const aside = document.querySelector('aside')
+    // aside.style.transform = `translateX(-200px)`
 }
 
 const activateSwiper = () => {

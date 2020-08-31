@@ -74,6 +74,39 @@ nav a {
     align-items: center;
 }
 
+#menu {
+    cursor: pointer;
+}
+
+aside {
+    width: 80vw;
+    background: green;
+    /* transform: translateX(00px); */
+    transition: transform 0.5s linear;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav-menu li {
+    list-style-type: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 /**********************************************
                     HOME
 ***********************************************/
