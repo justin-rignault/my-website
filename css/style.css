@@ -46,6 +46,10 @@ h1, h2 {
     display: none;
 }
 
+.mobile {
+    text-align: center;
+}
+
 /**********************************************
                     NAV
 ***********************************************/
@@ -135,7 +139,6 @@ aside {
     top: 49px;
     right: -100vw;
     z-index: 1000;
-    text-align: center;
     color: white;
     transition: transform 0.3s linear;
 }
@@ -168,7 +171,6 @@ aside {
 #home {
     background: url(../img/background-1.jpg);
     background-size: cover;
-    text-align: center;
     color: white;
 }
 
@@ -178,6 +180,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
 }
 
 .overlay > h1 {
@@ -218,17 +221,12 @@ aside {
 ***********************************************/
 
 #portfolio {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 0.01%, rgba(166, 210, 208, 0) 30.21%, rgba(166, 210, 208, 0.05) 33.33%, rgba(166, 173, 210, 0.1) 99.99%, rgba(166, 210, 208, 0.1) 100%);
-    position: relative;
 }
 
 .portfolio-h1 {
     padding-top: 5%;
-    font-size: 4rem;
+    font-size: 3.8rem;
     flex: 1;
 }
 
@@ -281,12 +279,11 @@ aside {
 ***********************************************/
 
 #about {
-    text-align: center;
     padding: 5%;
 }
 
 .about-h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
 }
 
 .swiper-container2 {
@@ -369,7 +366,6 @@ aside {
 ***********************************************/
 
 #contact {
-    text-align: center;
     background: url(../img/background-2.png) no-repeat;
     background-size: contain;
     background-color: rgba(166, 210, 208, 0.1);
@@ -412,7 +408,7 @@ aside {
 
 .social {
     text-align: center;
-    height: 35%;
+    height: 40%;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -430,7 +426,6 @@ aside {
 .whatsapp, .sms {
     display: flex;
     margin: auto;
-    text-align: center;
 }
 
 .sms {
