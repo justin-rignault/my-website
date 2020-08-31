@@ -26,7 +26,7 @@ const setSectionHeights = () => {
     portfolio.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
     swiperContainer.style.height = `${window.innerHeight - 150}px`
-    aside.style.height = `${window.innerHeight * 0.6}px`
+    aside.style.height = `${window.innerHeight * 0.4}px`
 }
 
 const setFavicon = () => {
@@ -54,9 +54,9 @@ const menuClick = ev => {
     const hamburgerClass = ev.target.closest('svg').classList.value
 
     if(hamburgerClass.includes('active')) {
-        aside.style.transform = 'translateX(-40vw)'
+        aside.style.transform = 'translateX(-100vw)'
     } else {
-        aside.style.transform = 'translateX(40vw)'
+        aside.style.transform = 'translateX(100vw)'
     }
     
     
@@ -67,7 +67,7 @@ const hideMobileMenu = ev => {
     const menu = document.querySelector('.ham')
     const position = aside.getBoundingClientRect()
     if(position.left < window.innerWidth) {
-        aside.style.transform = 'translateX(40vw)'
+        aside.style.transform = 'translateX(100vw)'
         menu.classList.remove('active')
 
     }
