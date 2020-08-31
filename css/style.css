@@ -226,7 +226,7 @@ aside {
     position: relative;
 }
 
-#portfolio > h1 {
+.portfolio-h1 {
     padding-top: 5%;
     font-size: 4rem;
     flex: 1;
@@ -379,13 +379,13 @@ aside {
     overflow: hidden;
 }
 
-#contact > h1 {
+.contact-h1 {
     font-size: 3.8rem;
     padding-top: 5%;
     margin-bottom: 10%;
 }
 
-#contact > p {
+.contact-p {
     padding: 3% 0;
 }
 
