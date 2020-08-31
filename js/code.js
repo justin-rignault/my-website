@@ -26,7 +26,7 @@ const setSectionHeights = () => {
     portfolio.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
     swiperContainer.style.height = `${window.innerHeight - 150}px`
-    aside.style.height = `${window.innerHeight / 2}px`
+    aside.style.height = `${window.innerHeight}px`
 }
 
 const setFavicon = () => {
@@ -46,11 +46,31 @@ const setFavicon = () => {
 const addEventListeners = () => {
     const menu = document.getElementById('menu')
     menu.addEventListener('click', menuClick)
+    document.addEventListener('click', hideMobileMenu)
 }
 
 const menuClick = ev => {
     const aside = document.querySelector('aside')
-    // aside.style.transform = `translateX(-200px)`
+    const hamburgerClass = ev.target.closest('svg').classList.value
+
+    if(hamburgerClass.includes('active')) {
+        aside.style.transform = 'translateX(-40vw)'
+    } else {
+        aside.style.transform = 'translateX(40vw)'
+    }
+    
+    
+}
+
+const hideMobileMenu = ev => {
+    const aside = document.querySelector('aside')
+    const menu = document.querySelector('.ham')
+    const position = aside.getBoundingClientRect()
+    if(position.left < window.innerWidth) {
+        aside.style.transform = 'translateX(40vw)'
+        menu.classList.remove('active')
+
+    }
 }
 
 const activateSwiper = () => {
