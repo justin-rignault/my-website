@@ -9,7 +9,7 @@ function init() {
     setSectionHeights()
     setFavicon()
     addEventListeners()
-    activateSwiper()
+    activateSwipers()
     activateSwiper2()
     activateSwiper3()
     copyrightMessage()
@@ -18,12 +18,14 @@ function init() {
 const setSectionHeights = () => {
     const home = document.getElementById('home')
     const portfolio = document.getElementById('portfolio')
+    const about = document.getElementById('about')
     const contact = document.getElementById('contact')
     const swiperContainer = document.querySelector('.swiper-container3')
     const aside = document.querySelector('aside')
 
     home.style.height = `${window.innerHeight}px`
     portfolio.style.minHeight = `${window.innerHeight}px`
+    about.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
     swiperContainer.style.height = `${window.innerHeight - 150}px`
     aside.style.height = `${window.innerHeight * 0.4}px`
@@ -73,7 +75,7 @@ const hideMobileMenu = ev => {
     }
 }
 
-const activateSwiper = () => {
+const activateSwipers = () => {
     const swiper = new Swiper('.swiper-container', {
         spaceBetween: 200,
         pagination: {
@@ -81,19 +83,15 @@ const activateSwiper = () => {
           clickable: true,
         },
       });
-}
 
-const activateSwiper2 = () => {
-    const swiper = new Swiper('.swiper-container2', {
+    const swiper2 = new Swiper('.swiper-container2', {
         spaceBetween: 300
       });
     document.querySelector('.swipe-skills').addEventListener('click', () => {
-        swiper.slideNext()
+        swiper2.slideNext()
     })
-}
 
-const activateSwiper3 = () => {
-    const swiper = new Swiper('.swiper-container3', {
+    const swiper3 = new Swiper('.swiper-container3', {
         spaceBetween: 300
       });
     document.querySelector('.swipe-form').addEventListener('click', () => {

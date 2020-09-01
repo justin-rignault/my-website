@@ -624,6 +624,10 @@ footer {
         font-weight: bold;
     }
 
+    /**********************************************
+                        HOME
+    ***********************************************/
+
     .overlay {
         display: grid;
         grid-template-areas: "a b" "c b" "d d";
@@ -649,10 +653,50 @@ footer {
         grid-area: c;
         margin: 0 30% 0 0;
         align-self: end;
+        text-align: left;
     }
 
     .overlay > div {
         grid-area: d;
+    }
+
+    /**********************************************
+                    PROTFOLIO
+    ***********************************************/
+
+    #portfolio > .desktop {
+        padding: 5% 10%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header > h1 {
+        font-size: var(--fontOne);
+    }
+
+    .works {
+        display: flex;
+        padding: 10% 0;
+    }
+
+    .work {
+        /* margin-right: 400px; */
+    }
+
+    .work > h2 {
+        text-align: center;
+        font-size: var(--fontThree);
+        color: #444;
+        font-weight: normal;
+        margin-bottom: 15%;
+    }
+
+    .work > img {
+        width: 100%;
     }
 }
 
@@ -660,4 +704,7 @@ footer {
 }
 
 @media(min-width: 1200px) {
+    .overlay > p {
+        font-size: var(--fontFive);
+    }
 }
