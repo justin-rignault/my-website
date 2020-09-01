@@ -206,10 +206,10 @@ aside {
 }
 
 .down-arrow {
-    margin-top: 15px;
+    margin-top: 20px;
     opacity: 0.6;
     cursor: pointer;
-    animation: move 0.8s infinite alternate;
+    animation: move 1s infinite alternate;
 }
 
 .down-arrow:hover {
@@ -561,10 +561,10 @@ footer {
 
 @keyframes move {
     from {
-        transform: translateY(0px);
+        transform: translateY(-15px);
     }
     to {
-        transform: translateY(15px);
+        transform: translateY(5px);
 
     }
 }
@@ -630,23 +630,26 @@ footer {
         grid-template-areas: "a b" "c b" "d d";
         padding: 0 10%;
         align-content: space-evenly;
+        justify-content: space-between;
     }
 
     .overlay > h1 {
         grid-area: a;
         text-align: left;
+        align-self: end;
     }
 
     .home-img {
         grid-area: b;
-        width: 100%;
-        height: 100%;
         margin-top: 0;
+        width: 100%;
+        align-self: end;
     }
 
     .overlay > p {
         grid-area: c;
-        margin: 0 100px 0 0;
+        margin: 0 30% 0 0;
+        align-self: end;
     }
 
     .overlay > div {
@@ -658,5 +661,4 @@ footer {
 }
 
 @media(min-width: 1200px) {
-    
 }

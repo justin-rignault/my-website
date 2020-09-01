@@ -22,7 +22,7 @@ const setSectionHeights = () => {
     const swiperContainer = document.querySelector('.swiper-container3')
     const aside = document.querySelector('aside')
 
-    home.style.height = `${window.innerHeight - 30}px`
+    home.style.height = `${window.innerHeight}px`
     portfolio.style.minHeight = `${window.innerHeight}px`
     contact.style.minHeight = `${window.innerHeight}px`
     swiperContainer.style.height = `${window.innerHeight - 150}px`
