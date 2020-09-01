@@ -124,7 +124,6 @@ nav a {
 }
   
 .ham.active .middle {
-    //stroke-dashoffset: -20px;
     transform: rotate(90deg);
 }
   
