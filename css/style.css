@@ -190,7 +190,9 @@ aside {
 }
 
 .home-img {
-    margin-top: -50px;
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: -15%;
 }
 
 .overlay > p {
@@ -618,6 +620,27 @@ footer {
         text-decoration: none;
         color: black;
         font-weight: bold;
+    }
+
+    .overlay {
+        display: grid;
+        grid-template-areas: ;
+    }
+
+    .overlay > h1 {
+        grid-area: a;
+    }
+
+    .home-img {
+        grid-area: b;
+    }
+
+    .overlay > p {
+        grid-area: c;
+    }
+
+    .overlay > div {
+        grid-area: d;
     }
 }
 
