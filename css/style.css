@@ -225,7 +225,7 @@ aside {
 }
 
 .portfolio-h1 {
-    padding-top: 5%;
+    padding-top: 10%;
     font-size: 3.8rem;
     flex: 1;
 }
@@ -284,6 +284,7 @@ aside {
 
 .about-h1 {
     font-size: 3.8rem;
+    padding-top: 5%;
 }
 
 .swiper-container2 {
@@ -377,7 +378,7 @@ aside {
 
 .contact-h1 {
     font-size: 3.8rem;
-    padding-top: 5%;
+    padding-top: 9%;
     margin-bottom: 10%;
 }
 
@@ -397,9 +398,9 @@ aside {
     align-items: center;
 }
 
-.email > img {
-    width: 5%;
-    margin-right: -10%;
+.email > div > img {
+    width: 1rem;
+    margin-right: 1rem;
 }
 
 .email > a {
