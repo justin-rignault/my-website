@@ -82,7 +82,7 @@ const activateSwipers = () => {
           el: '.swiper-pagination',
           clickable: true,
         },
-      });
+      })
 
     const swiper2 = new Swiper('.swiper-container2', {
         spaceBetween: 300
@@ -93,10 +93,20 @@ const activateSwipers = () => {
 
     const swiper3 = new Swiper('.swiper-container3', {
         spaceBetween: 300
-      });
+      })
     document.querySelector('.swipe-form').addEventListener('click', () => {
-        swiper.slideNext()
+        swiper3.slideNext()
     })
+
+    const swiper4 = new Swiper('.swiper-container4', {
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        spaceBetween: 300
+    })
+
 }
 
 const isMobileBrowser = () => {

@@ -208,7 +208,7 @@ aside {
     margin-top: 20px;
     opacity: 0.6;
     cursor: pointer;
-    animation: move 1s infinite alternate;
+    animation: move 1s infinite ease-in alternate;
 }
 
 .down-arrow:hover {
@@ -678,13 +678,25 @@ footer {
         font-size: var(--fontOne);
     }
 
-    .works {
-        display: flex;
-        padding: 10% 0;
+    .swiper-container4 {
+        overflow: hidden;
+        position: relative;
     }
 
-    .work {
-        /* margin-right: 400px; */
+    .work-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .swiper-slide {
+        width: 50%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        background: #06958C;
+        border-radius: 50%;
+        padding: 4%;
+        color: white;
     }
 
     .work > h2 {
@@ -692,11 +704,6 @@ footer {
         font-size: var(--fontThree);
         color: #444;
         font-weight: normal;
-        margin-bottom: 15%;
-    }
-
-    .work > img {
-        width: 100%;
     }
 }
 
