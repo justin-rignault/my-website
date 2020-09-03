@@ -10,8 +10,6 @@ function init() {
     setFavicon()
     addEventListeners()
     activateSwipers()
-    activateSwiper2()
-    activateSwiper3()
     copyrightMessage()
 }
 
