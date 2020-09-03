@@ -279,7 +279,7 @@ aside {
                     ABOUT
 ***********************************************/
 
-#about {
+#about > .mobile {
     padding: 5%;
 }
 
@@ -716,6 +716,32 @@ footer {
         padding: 35px;
         color: white;
     }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    /**********************************************
+                        ABOUT
+    ***********************************************/
+
+    #about > .desktop {
+        padding: 5% 10%;
+
+    }
+
+    /**********************************************
+                        CONTACT
+    ***********************************************/
+
+    #contact > .desktop {
+        padding: 5% 10%;
+    }
+
 }
 
 @media (min-width: 992px) {
