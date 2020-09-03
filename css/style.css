@@ -706,6 +706,10 @@ footer {
         align-items: center;
     }
 
+    .swiper-slide > h2 {
+        margin-bottom: 5%;
+    }
+
     .swiper-button-next, .swiper-button-prev {
         background: #06958C;
         border-radius: 50%;
