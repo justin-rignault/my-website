@@ -685,25 +685,32 @@ footer {
 
     .work-img {
         width: 100%;
-        margin: auto;
+        margin-bottom: 10%;
     }
 
     .swiper-slide {
-        width: 50%;
+        width: 60%;
+        text-align: center;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
     }
 
     .swiper-button-next, .swiper-button-prev {
         background: #06958C;
         border-radius: 50%;
-        padding: 4%;
+        padding: 35px;
         color: white;
-    }
-
-    .work > h2 {
-        text-align: center;
-        font-size: var(--fontThree);
-        color: #444;
-        font-weight: normal;
     }
 }
 

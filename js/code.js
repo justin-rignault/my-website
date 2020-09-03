@@ -100,6 +100,7 @@ const activateSwipers = () => {
 
     const swiper4 = new Swiper('.swiper-container4', {
         slidesPerView: 'auto',
+        centeredSlides: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
