@@ -753,14 +753,6 @@ footer {
         margin-left: 20%;
         text-align: justify;
     }
-    
-    .picture-of-me {
-        width: 40%;
-        height: auto;
-        max-height: 350px;
-        margin-top: 0;
-        border-radius: 10px;
-    }
 
     .skills-desktop {
         display: flex;
