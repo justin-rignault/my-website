@@ -7,9 +7,9 @@ Description: main javascript file linked to index.html for my personal website
 
 function init() {
     setSectionHeights()
+    activateSwipers()
     setFavicon()
     addEventListeners()
-    activateSwipers()
     copyrightMessage()
 }
 
@@ -47,6 +47,7 @@ const addEventListeners = () => {
     const menu = document.getElementById('menu')
     menu.addEventListener('click', menuClick)
     document.addEventListener('click', hideMobileMenu)
+    document.addEventListener('scroll', highlightNavElement)
 }
 
 const menuClick = ev => {
@@ -127,6 +128,42 @@ const isMobileBrowser = () => {
 const detectDarkMode = () => {
     const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     return isDark
+}
+
+const highlightNavElement = ev => {
+    const section = document.querySelectorAll('section')
+    const home = section[0]
+    const portfolio = section[1]
+    const about = section[2]
+    const contact = section[3]
+
+    if (isInViewport(home)) {
+        addHighlight(document.querySelectorAll("[href='#home']"))
+    } else if (isInViewport(portfolio)) {
+        addHighlight(document.querySelectorAll("[href='#portfolio']"))
+    } else if (isInViewport(about)) {
+        addHighlight(document.querySelectorAll("[href='#about']"))
+    } else if (isInViewport(contact)) {
+        addHighlight(document.querySelectorAll("[href='#contact']"))
+    }
+}
+
+const isInViewport = elem => {
+    let bounding = elem.getBoundingClientRect()
+    if (100 > bounding.top && bounding.top > -100) {
+        return true
+    }
+    return false
+}
+
+const addHighlight = elem => {
+    document.querySelectorAll('.highlight').forEach( e => {
+        e.classList.remove('highlight')
+    })
+
+    elem.forEach(el => {
+        el.classList.add('highlight')
+    });
 }
 
 const copyrightMessage = () => {

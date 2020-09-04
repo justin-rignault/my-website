@@ -50,6 +50,11 @@ h1, h2 {
     text-align: center;
 }
 
+.highlight {
+    color: #066660 !important;
+    font-weight: 900;
+}
+
 /**********************************************
                     NAV
 ***********************************************/
@@ -155,7 +160,6 @@ aside {
 
 .nav-menu li a {
     text-decoration: none;
-    font-weight: bold;
     color: white;
     font-size: var(--fontFive);
     display: flex;
@@ -388,6 +392,7 @@ aside {
 
 .contact-p {
     padding: 3% 0;
+    opacity: 0.75;
 }
 
 .contact-swiper-slide {
@@ -400,6 +405,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .email > div > img {
@@ -506,7 +512,7 @@ aside {
     color: #ccc;
 }
 
-input:focus + label, input:valid + label, #message:focus + label {
+input:focus + label, input:valid + label, #message:focus + label, #message-desktop:focus + label {
     color: #066660;
     width: auto;
     height: 1.3em;
@@ -518,7 +524,7 @@ input:focus + label, input:valid + label, #message:focus + label {
     left: 2rem;
 }
 
-#message {
+#message, #message-desktop {
     border: 1px solid #066660;
     border-radius: 15px;
     padding: 1.2rem;
@@ -527,7 +533,7 @@ input:focus + label, input:valid + label, #message:focus + label {
     outline: none;
 }
 
-#submit {
+#submit, #submit-desktop {
     width: 100%;
     margin: 0.5rem;
     background: #077972;
@@ -621,7 +627,6 @@ footer {
     .nav li a {
         text-decoration: none;
         color: black;
-        font-weight: bold;
     }
 
     /**********************************************
@@ -731,15 +736,6 @@ footer {
 
     #about > .desktop {
         padding: 5% 10%;
-
-    }
-
-    /**********************************************
-                        CONTACT
-    ***********************************************/
-
-    #contact > .desktop {
-        padding: 5% 10%;
     }
 
     .about {
@@ -762,6 +758,49 @@ footer {
     .skill-div {
         margin: 0;
     }
+
+    /**********************************************
+                        CONTACT
+    ***********************************************/
+
+    #contact > .desktop {
+        padding: 5% 10%;
+        display: grid;
+        grid-template-areas: "a a" "b c";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10% 15%;
+    }
+
+    .header {
+        grid-area: a;
+    }
+
+    .contact-left {
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact-right {
+        grid-area: c;
+    }
+
+    .social {
+        height: 50%;
+        padding-top: 10%;
+        text-align: left;
+    } 
+
+    .social-media {
+        width: 35%;
+    }
+
+    .social-media, .whatsapp, .sms {
+        margin-left: 0;
+        padding-left: 0;
+    } 
+
 }
 
 @media (min-width: 992px) {
