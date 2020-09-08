@@ -48,6 +48,7 @@ const addEventListeners = () => {
     menu.addEventListener('click', menuClick)
     document.addEventListener('click', hideMobileMenu)
     document.addEventListener('scroll', highlightNavElement)
+    document.querySelectorAll("[type='submit").forEach(btn => btn.addEventListener('click', submitMessage))
 }
 
 const menuClick = ev => {
@@ -172,5 +173,31 @@ const copyrightMessage = () => {
     const copyrightTag = document.getElementById('copyright')
     copyrightTag.innerHTML = `&copy; Copyright ${year} - Justin Rignault. All Rights Reserved`
 }
+
+const submitMessage = ev => {
+    ev.preventDefault()
+    const url = 'https://622vuxqj87.execute-api.sa-east-1.amazonaws.com/amazon-lambda-stage/submit-message'
+    const data = {
+        name,
+        email,
+        message
+    }
+    const form = ev.target.closest('form')
+    const userInput = Object.values(form).reduce((obj,field) => { obj[field.name] = field.value; return obj }, {})
+
+    data.name = userInput.name
+    data.email = userInput.email
+    data.message = userInput.message
+    
+
+    console.log(JSON.stringify(data))
+
+    fetch(url, {
+        method: 'POST', 
+        mode: 'cors',
+        body: JSON.stringify(data)
+    })
+}
+
 
 document.addEventListener('DOMContentLoaded', init)
