@@ -188,15 +188,15 @@ const submitMessage = ev => {
     data.name = userInput.name
     data.email = userInput.email
     data.message = userInput.message
-    
-
-    console.log(JSON.stringify(data))
 
     fetch(url, {
         method: 'POST', 
         mode: 'cors',
         body: JSON.stringify(data)
     })
+
+    alert('Thank you for your message!')
+    window.location.reload()
 }
 
 
