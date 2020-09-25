@@ -1,426 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Justin's personal portfolio website. A way to connect with people and provide an easy way to get in touch.">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" id="favicon" href="./img/favicons/JR.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Justin's personal portfolio website. A way to connect with people and provide an easy way to get in touch."
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      id="favicon"
+      href="./img/favicons/JR.ico"
+    />
     <title>Justin Rignault</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="#"><img src="./img/jr.svg" alt="logo" class="logo"/></a>
-        <h2>Designer & Developer</h2>
-        <nav>
-            <a class="mobile">
-                <svg class="ham hamRotate" id="menu" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
-                    <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                    <path class="line middle" d="m 30,50 h 40" />
-                    <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                </svg>
-            </a>
-            <ul class="desktop nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <a href="#"><img src="./img/jr.svg" alt="logo" class="logo" /></a>
+      <h2>Designer & Developer</h2>
+      <nav>
+        <a class="mobile">
+          <svg
+            class="ham hamRotate"
+            id="menu"
+            viewBox="0 0 100 100"
+            width="40"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+            />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path
+              class="line bottom"
+              d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+            />
+          </svg>
+        </a>
+        <ul class="desktop nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <aside class="mobile">
-        <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </aside>
     <section id="home">
-        <div class="overlay">
-            <h1>Who am I?</h1>
-            <img src="./img/illustrations/me-coding-mobile.svg" alt="me coding" class="home-img"/>
-            <p>I’m Justin, an innovative full stack web/mobile application designer & developer driven by passion and ingenuity.</p>
-            <div>
-                <p>Find out more!</p>
-                <a href="#portfolio"><img src="./img/down-arrow.svg" alt="down arrow" class="down-arrow"/></a>
-            </div>
+      <div class="overlay">
+        <h1>Who am I?</h1>
+        <img
+          src="./img/illustrations/me-coding-mobile.svg"
+          alt="me coding"
+          class="home-img"
+        />
+        <p>
+          I’m Justin, an innovative full stack web/mobile application designer &
+          developer driven by passion and ingenuity.
+        </p>
+        <div>
+          <p>Find out more!</p>
+          <a href="#portfolio"
+            ><img
+              src="./img/down-arrow.svg"
+              alt="down arrow"
+              class="down-arrow"
+          /></a>
         </div>
+      </div>
     </section>
     <section id="portfolio">
-        <div class="mobile">
-            <h1 class="portfolio-h1">Latest&nbsp;Works</h1>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2>CBSA Helper</h2>
-                        <img src="./img/CBSA-helper.png" alt="cbsa helper" class="swiper-img">
-                        <p>A voice user interface (VUI) application designed for Google Assistant and Amazon Alexa to help Canadian travelers claim exemptions and easily find prohibitted items.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Convertenccy</h2>
-                        <img src="./img/convertenccy.png" alt="convertenccy" class="swiper-img">
-                        <p>A basic android app to calculate exchange rates of various currencies based on a 3rd party API. Nicely formatted the data received using a dark theme UI separated in two different views.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Github Profile Searcher</h2>
-                        <img src="./img/github-profile-searcher.png" alt="github profile searcher" class="swiper-img">
-                        <p>An android application used to search any user on GitHub to find details on the desired account. Such as: the name, the location, the company, the number of public repositories and many others.</p>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+      <div class="mobile">
+        <h1 class="portfolio-h1">Latest&nbsp;Works</h1>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2>CBSA Helper</h2>
+              <img
+                src="./img/CBSA-helper.png"
+                alt="cbsa helper"
+                class="swiper-img"
+              />
+              <p>
+                A voice user interface (VUI) application designed for Google
+                Assistant and Amazon Alexa to help Canadian travelers claim
+                exemptions and easily find prohibitted items.
+              </p>
             </div>
+            <div class="swiper-slide">
+              <h2>Convertenccy</h2>
+              <img
+                src="./img/convertenccy.png"
+                alt="convertenccy"
+                class="swiper-img"
+              />
+              <p>
+                A basic android app to calculate exchange rates of various
+                currencies based on a 3rd party API. Nicely formatted the data
+                received using a dark theme UI separated in two different views.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h2>Github Profile Searcher</h2>
+              <img
+                src="./img/github-profile-searcher.png"
+                alt="github profile searcher"
+                class="swiper-img"
+              />
+              <p>
+                An android application used to search any user on GitHub to find
+                details on the desired account. Such as: the name, the location,
+                the company, the number of public repositories and many others.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="desktop">
-            <div class="header">
-                <h1>Latest Works</h1>
-                <img src="./img/illustrations/latest-works.svg" alt="latest works">
-            </div>
-            <div class="swiper-container4">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2>CBSA Helper</h2>
-                        <img src="./img/CBSA-helper.png" alt="cbsa helper" class="work-img">
-                        <p>A voice user interface (VUI) application designed for Google Assistant and Amazon Alexa to help Canadian travelers claim exemptions and easily find prohibitted items.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Convertenccy</h2>
-                        <img src="./img/convertenccy.png" alt="convertenccy" class="work-img">
-                        <p>A basic android app to calculate exchange rates of various currencies based on a 3rd party API. Nicely formatted the data received using a dark theme UI separated in two different views.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2>Github Profile Searcher</h2>
-                        <img src="./img/github-profile-searcher.png" alt="github profile searcher" class="work-img">
-                        <p>An android application used to search any user on GitHub to find details on the desired account. Such as: the name, the location, the company, the number of public repositories and many others.</p>
-                    </div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+      </div>
+      <div class="desktop">
+        <div class="header">
+          <h1>Latest Works</h1>
+          <img src="./img/illustrations/latest-works.svg" alt="latest works" />
         </div>
+        <div class="swiper-container4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2>CBSA Helper</h2>
+              <img
+                src="./img/CBSA-helper.png"
+                alt="cbsa helper"
+                class="work-img"
+              />
+              <p>
+                A voice user interface (VUI) application designed for Google
+                Assistant and Amazon Alexa to help Canadian travelers claim
+                exemptions and easily find prohibitted items.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h2>Convertenccy</h2>
+              <img
+                src="./img/convertenccy.png"
+                alt="convertenccy"
+                class="work-img"
+              />
+              <p>
+                A basic android app to calculate exchange rates of various
+                currencies based on a 3rd party API. Nicely formatted the data
+                received using a dark theme UI separated in two different views.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h2>Github Profile Searcher</h2>
+              <img
+                src="./img/github-profile-searcher.png"
+                alt="github profile searcher"
+                class="work-img"
+              />
+              <p>
+                An android application used to search any user on GitHub to find
+                details on the desired account. Such as: the name, the location,
+                the company, the number of public repositories and many others.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </section>
     <section id="about">
-        <div class="mobile">
-            <h1 class="about-h1">About Me</h1>
-            <div class="swiper-container2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide about-me-div">
-                        <img src="./img/me.png" alt="picture of myself" class="picture-of-me">
-                        <p class="about-p">In recent years, I've found my passion; understanding and communicating with computers. I've learnt to communicate with computers using a variety of different programming languages. Since then, I've done countless online tutorials, enrolled myself in a post-secondary institution, and submerged myself in the developer/designer community.
-                            <br><br>
-                            I realize that to be the best at what I do, I need to love what I do, think outside the box, and help others. Not only does helping other people improve my own potential, it builds a sense of trust and community. Good teamwork is essential to creating great projects. No state-of-the-art app has been developed by just one person.
-                        </p>
-                        <div class="swipe-skills">
-                            <span>Skills</span>
-                            <img src="./img/right-arrow.svg" alt="right-arrow">
-                        </div>
-                    </div>
-                    <div class="swiper-slide my-skills-div">
-                        <div class="skill-div">
-                            <h2>Programming Languages:</h2>
-                            <div class="skill">
-                                <img src="./img/skill-icons/js.png" alt="javascript" class="skill-img">
-                                <p>Javascript</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/python.jpeg" alt="python" class="skill-img">
-                                <p>Python</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/sql.png" alt="sql" class="skill-img">
-                                <p>SQL</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/csharp.png" alt="c#" class="skill-img">
-                                <p>C#</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/kotlin.jpeg" alt="kotlin" class="skill-img">
-                                <p>Kotlin</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/java.jpeg" alt="java" class="skill-img">
-                                <p>Java</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/cpp.png" alt="cpp" class="skill-img">
-                                <p>C++</p>
-                            </div>
-                        </div>
-                        <div class="skill-div">
-                            <h2>Frameworks/Libraries:</h2>
-                            <div class="skill">
-                                <img src="./img/skill-icons/node.png" alt="node" class="skill-img">
-                                <p>Node.js</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/react.png" alt="react" class="skill-img">
-                                <p>React</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/cordova.jpeg" alt="cordova" class="skill-img">
-                                <p>Cordova</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/bootstrap.png" alt="bootstrap" class="skill-img">
-                                <p>Bootstrap</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/sass.png" alt="sass" class="skill-img">
-                                <p>Sass</p>
-                            </div>
-                        </div>
-                        <div class="skill-div">
-                            <h2>Other Technologies:</h2>
-                            <div class="skill">
-                                <img src="./img/skill-icons/figma.png" alt="figma" class="skill-img">
-                                <p>Figma</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/ai.png" alt="adobe illustrator" class="skill-img">
-                                <p>Adobe Illustrator</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/ps.jpeg" alt="adobe photoshop" class="skill-img">
-                                <p>Adobe Photoshop</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/xd.png" alt="adobe xd" class="skill-img">
-                                <p>Adobe XD</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/mongodb.png" alt="mongodb" class="skill-img">
-                                <p>MongoDB</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/aws.png" alt="aws" class="skill-img">
-                                <p>AWS</p>
-                            </div>
-                            <div class="skill">
-                                <img src="./img/skill-icons/graphql.png" alt="graphql" class="skill-img">
-                                <p>GraphQL</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="mobile">
+        <h1 class="about-h1">About Me</h1>
+        <div class="swiper-container2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide about-me-div">
+              <img
+                src="./img/me.png"
+                alt="picture of myself"
+                class="picture-of-me"
+              />
+              <p class="about-p">
+                In recent years, I've found my passion; understanding and
+                communicating with computers. I've learnt to communicate with
+                computers using a variety of different programming languages.
+                Since then, I've done countless online tutorials, enrolled
+                myself in a post-secondary institution, and submerged myself in
+                the developer/designer community. <br /><br />
+                I realize that to be the best at what I do, I need to love what
+                I do, think outside the box, and help others. Not only does
+                helping other people improve my own potential, it builds a sense
+                of trust and community. Good teamwork is essential to creating
+                great projects. No state-of-the-art app has been developed by
+                just one person.
+              </p>
+              <div class="swipe-skills">
+                <span>Skills</span>
+                <img src="./img/right-arrow.svg" alt="right-arrow" />
+              </div>
             </div>
+            <div class="swiper-slide my-skills-div">
+              <div class="skill-div">
+                <h2>Programming Languages:</h2>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/js.png"
+                    alt="javascript"
+                    class="skill-img"
+                  />
+                  <p>Javascript</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/python.jpeg"
+                    alt="python"
+                    class="skill-img"
+                  />
+                  <p>Python</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/sql.png"
+                    alt="sql"
+                    class="skill-img"
+                  />
+                  <p>SQL</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/csharp.png"
+                    alt="c#"
+                    class="skill-img"
+                  />
+                  <p>C#</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/kotlin.jpeg"
+                    alt="kotlin"
+                    class="skill-img"
+                  />
+                  <p>Kotlin</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/java.jpeg"
+                    alt="java"
+                    class="skill-img"
+                  />
+                  <p>Java</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/cpp.png"
+                    alt="cpp"
+                    class="skill-img"
+                  />
+                  <p>C++</p>
+                </div>
+              </div>
+              <div class="skill-div">
+                <h2>Frameworks/Libraries:</h2>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/node.png"
+                    alt="node"
+                    class="skill-img"
+                  />
+                  <p>Node.js</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/react.png"
+                    alt="react"
+                    class="skill-img"
+                  />
+                  <p>React</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/cordova.jpeg"
+                    alt="cordova"
+                    class="skill-img"
+                  />
+                  <p>Cordova</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/bootstrap.png"
+                    alt="bootstrap"
+                    class="skill-img"
+                  />
+                  <p>Bootstrap</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/sass.png"
+                    alt="sass"
+                    class="skill-img"
+                  />
+                  <p>Sass</p>
+                </div>
+              </div>
+              <div class="skill-div">
+                <h2>Other Technologies:</h2>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/figma.png"
+                    alt="figma"
+                    class="skill-img"
+                  />
+                  <p>Figma</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/ai.png"
+                    alt="adobe illustrator"
+                    class="skill-img"
+                  />
+                  <p>Adobe Illustrator</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/ps.jpeg"
+                    alt="adobe photoshop"
+                    class="skill-img"
+                  />
+                  <p>Adobe Photoshop</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/xd.png"
+                    alt="adobe xd"
+                    class="skill-img"
+                  />
+                  <p>Adobe XD</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/mongodb.png"
+                    alt="mongodb"
+                    class="skill-img"
+                  />
+                  <p>MongoDB</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/aws.png"
+                    alt="aws"
+                    class="skill-img"
+                  />
+                  <p>AWS</p>
+                </div>
+                <div class="skill">
+                  <img
+                    src="./img/skill-icons/graphql.png"
+                    alt="graphql"
+                    class="skill-img"
+                  />
+                  <p>GraphQL</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="desktop">
-            <div class="header">
-                <h1>About Me</h1>
-                <img src="./img/illustrations/about-me.svg" alt="about me">
-            </div>
-            <div class="about">
-                <img src="./img/me.png" alt="picture of myself" class="picture-of-me">
-                <p>In recent years, I've found my passion; understanding and communicating with computers. I've learnt to communicate with computers using a variety of different programming languages. Since then, I've done countless online tutorials, enrolled myself in a post-secondary institution, and submerged myself in the developer/designer community.
-                    <br><br>
-                    I realize that to be the best at what I do, I need to love what I do, think outside the box, and help others. Not only does helping other people improve my own potential, it builds a sense of trust and community. Good teamwork is essential to creating great projects. No state-of-the-art app has been developed by just one person.
-                </p>
-            </div>
-            <div class="skills-desktop">
-                <div class="skill-div">
-                    <h2>Programming Languages:</h2>
-                    <div class="skill">
-                        <img src="./img/skill-icons/js.png" alt="javascript" class="skill-img">
-                        <p>Javascript</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/python.jpeg" alt="python" class="skill-img">
-                        <p>Python</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/sql.png" alt="sql" class="skill-img">
-                        <p>SQL</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/csharp.png" alt="c#" class="skill-img">
-                        <p>C#</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/kotlin.jpeg" alt="kotlin" class="skill-img">
-                        <p>Kotlin</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/java.jpeg" alt="java" class="skill-img">
-                        <p>Java</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/cpp.png" alt="cpp" class="skill-img">
-                        <p>C++</p>
-                    </div>
-                </div>
-                <div class="skill-div">
-                    <h2>Frameworks/Libraries:</h2>
-                    <div class="skill">
-                        <img src="./img/skill-icons/node.png" alt="node" class="skill-img">
-                        <p>Node.js</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/react.png" alt="react" class="skill-img">
-                        <p>React</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/cordova.jpeg" alt="cordova" class="skill-img">
-                        <p>Cordova</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/bootstrap.png" alt="bootstrap" class="skill-img">
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/sass.png" alt="sass" class="skill-img">
-                        <p>Sass</p>
-                    </div>
-                </div>
-                <div class="skill-div">
-                    <h2>Other Technologies:</h2>
-                    <div class="skill">
-                        <img src="./img/skill-icons/figma.png" alt="figma" class="skill-img">
-                        <p>Figma</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/ai.png" alt="adobe illustrator" class="skill-img">
-                        <p>Adobe Illustrator</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/ps.jpeg" alt="adobe photoshop" class="skill-img">
-                        <p>Adobe Photoshop</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/xd.png" alt="adobe xd" class="skill-img">
-                        <p>Adobe XD</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/mongodb.png" alt="mongodb" class="skill-img">
-                        <p>MongoDB</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/aws.png" alt="aws" class="skill-img">
-                        <p>AWS</p>
-                    </div>
-                    <div class="skill">
-                        <img src="./img/skill-icons/graphql.png" alt="graphql" class="skill-img">
-                        <p>GraphQL</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="desktop">
+        <div class="header">
+          <h1>About Me</h1>
+          <img src="./img/illustrations/about-me.svg" alt="about me" />
         </div>
+        <div class="about">
+          <img
+            src="./img/me.png"
+            alt="picture of myself"
+            class="picture-of-me"
+          />
+          <p>
+            In recent years, I've found my passion; understanding and
+            communicating with computers. I've learnt to communicate with
+            computers using a variety of different programming languages. Since
+            then, I've done countless online tutorials, enrolled myself in a
+            post-secondary institution, and submerged myself in the
+            developer/designer community. <br /><br />
+            I realize that to be the best at what I do, I need to love what I
+            do, think outside the box, and help others. Not only does helping
+            other people improve my own potential, it builds a sense of trust
+            and community. Good teamwork is essential to creating great
+            projects. No state-of-the-art app has been developed by just one
+            person.
+          </p>
+        </div>
+        <div class="skills-desktop">
+          <div class="skill-div">
+            <h2>Programming Languages:</h2>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/js.png"
+                alt="javascript"
+                class="skill-img"
+              />
+              <p>Javascript</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/python.jpeg"
+                alt="python"
+                class="skill-img"
+              />
+              <p>Python</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/sql.png"
+                alt="sql"
+                class="skill-img"
+              />
+              <p>SQL</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/csharp.png"
+                alt="c#"
+                class="skill-img"
+              />
+              <p>C#</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/kotlin.jpeg"
+                alt="kotlin"
+                class="skill-img"
+              />
+              <p>Kotlin</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/java.jpeg"
+                alt="java"
+                class="skill-img"
+              />
+              <p>Java</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/cpp.png"
+                alt="cpp"
+                class="skill-img"
+              />
+              <p>C++</p>
+            </div>
+          </div>
+          <div class="skill-div">
+            <h2>Frameworks/Libraries:</h2>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/node.png"
+                alt="node"
+                class="skill-img"
+              />
+              <p>Node.js</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/react.png"
+                alt="react"
+                class="skill-img"
+              />
+              <p>React</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/cordova.jpeg"
+                alt="cordova"
+                class="skill-img"
+              />
+              <p>Cordova</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/bootstrap.png"
+                alt="bootstrap"
+                class="skill-img"
+              />
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/sass.png"
+                alt="sass"
+                class="skill-img"
+              />
+              <p>Sass</p>
+            </div>
+          </div>
+          <div class="skill-div">
+            <h2>Other Technologies:</h2>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/figma.png"
+                alt="figma"
+                class="skill-img"
+              />
+              <p>Figma</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/ai.png"
+                alt="adobe illustrator"
+                class="skill-img"
+              />
+              <p>Adobe Illustrator</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/ps.jpeg"
+                alt="adobe photoshop"
+                class="skill-img"
+              />
+              <p>Adobe Photoshop</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/xd.png"
+                alt="adobe xd"
+                class="skill-img"
+              />
+              <p>Adobe XD</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/mongodb.png"
+                alt="mongodb"
+                class="skill-img"
+              />
+              <p>MongoDB</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/aws.png"
+                alt="aws"
+                class="skill-img"
+              />
+              <p>AWS</p>
+            </div>
+            <div class="skill">
+              <img
+                src="./img/skill-icons/graphql.png"
+                alt="graphql"
+                class="skill-img"
+              />
+              <p>GraphQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-        <div class="mobile">
-            <h1 class="contact-h1">Get&nbsp;In&nbsp;Touch</h1>
-            <div class="swiper-container3">
-                <div class="swiper-wrapper contact-swiper-wraper">
-                    <div class="swiper-slide contact-swiper-slide">
-                        <p>Feel free to get in touch with me, I am always open to discussing new projects, creative ideas or opportunities to be a part of your vision.</p>
-                        <div class="email">
-                            <div>
-                                <img src="./img/gmail.png" alt="gmail">
-                                <span>justinrignault@gmail.com</span>
-                            </div>
-                            <a href="mailto:justinrignault@gmail.com?Subject=Hi%20Justin">Send Email</a>
-                        </div>
-                        <div class="social">
-                            <h2>Social</h2>
-                            <div class="social-media">
-                                <a href="https://www.linkedin.com/in/justin-rignault-1967a0185" target="_blank"><img src="./img/linkedin.svg" alt="linkedin"></a>
-                                <a href="https://github.com/justin-rignault" target="_blank"><img src="./img/github.svg" alt="github"></a>
-                            </div>
-                            <div class="whatsapp">
-                                <img src="./img/whatsapp.svg" alt="whatsapp">
-                                <span>+1 (613) 879-9924</span>
-                            </div>
-                            <div class="sms">
-                                <img src="./img/sms.svg" alt="whatsapp">
-                                <span>+55 (11) 95687-9580</span>
-                            </div>
-                        </div>
-                        <div class="swipe-form">
-                            <span>Form</span>
-                            <img src="./img/right-arrow.svg" alt="right-arrow">
-                        </div>
-                    </div>
-                    <div class="swiper-slide contact-swiper-slide">
-                        <form class="form" method="post">
-                            <div class="form-field" id="name-field">
-                                <input type="text" name="name" id="name" required>
-                                <label for="name">Name</label>
-                            </div>
-                            <div class="form-field" id="email-field">
-                                <input type="email" name="email" id="email" required>
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="form-field" id="message-field">
-                                <textarea name="message" id="message" rows="12" required></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                            <div id="submit-button">
-                                <input type="submit" id="submit" value="Send Message">
-                            </div>
-                        </form>
-                    </div>
+      <div class="mobile">
+        <h1 class="contact-h1">Get&nbsp;In&nbsp;Touch</h1>
+        <div class="swiper-container3">
+          <div class="swiper-wrapper contact-swiper-wraper">
+            <div class="swiper-slide contact-swiper-slide">
+              <p>
+                Feel free to get in touch with me, I am always open to
+                discussing new projects, creative ideas or opportunities to be a
+                part of your vision.
+              </p>
+              <div class="email">
+                <div>
+                  <img src="./img/gmail.png" alt="gmail" />
+                  <span>justinrignault@gmail.com</span>
                 </div>
+                <a href="mailto:justinrignault@gmail.com?Subject=Hi%20Justin"
+                  >Send Email</a
+                >
+              </div>
+              <div class="social">
+                <h2>Social</h2>
+                <div class="social-media">
+                  <a
+                    href="https://www.linkedin.com/in/justin-rignault-1967a0185"
+                    target="_blank"
+                    ><img src="./img/linkedin.svg" alt="linkedin"
+                  /></a>
+                  <a href="https://github.com/justin-rignault" target="_blank"
+                    ><img src="./img/github.svg" alt="github"
+                  /></a>
+                </div>
+                <div class="whatsapp">
+                  <img src="./img/whatsapp.svg" alt="whatsapp" />
+                  <span>+1 (613) 879-9924</span>
+                </div>
+                <div class="sms">
+                  <img src="./img/sms.svg" alt="whatsapp" />
+                  <span>+55 (11) 95687-9580</span>
+                </div>
+              </div>
+              <div class="swipe-form">
+                <span>Form</span>
+                <img src="./img/right-arrow.svg" alt="right-arrow" />
+              </div>
             </div>
-            <p class="contact-p">All messages to be answered within 24 hours</p>
+            <div class="swiper-slide contact-swiper-slide">
+              <form class="form" method="post">
+                <div class="form-field" id="name-field">
+                  <input type="text" name="name" id="name" required />
+                  <label for="name">Name</label>
+                </div>
+                <div class="form-field" id="email-field">
+                  <input type="email" name="email" id="email" required />
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-field" id="message-field">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="12"
+                    required
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <div id="submit-button">
+                  <input type="submit" id="submit" value="Send Message" />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="desktop">
-            <div class="header">
-                <h1>Get In Touch</h1>
-                <img src="./img/illustrations/get-in-touch.svg" alt="get in touch">
-            </div>
-            <div class="contact-left">
-                <p>Feel free to get in touch with me, I am always open to discussing new projects, creative ideas or opportunities to be a part of your vision.</p>
-                <div class="email">
-                    <div>
-                        <img src="./img/gmail.png" alt="gmail">
-                        <span>justinrignault@gmail.com</span>
-                    </div>
-                    <a href="mailto:justinrignault@gmail.com?Subject=Hi%20Justin">Send Email</a>
-                </div>
-                <div class="social">
-                    <h2>Social</h2>
-                    <div class="social-media">
-                        <a href="https://www.linkedin.com/in/justin-rignault-1967a0185" target="_blank"><img src="./img/linkedin.svg" alt="linkedin"></a>
-                        <a href="https://github.com/justin-rignault" target="_blank"><img src="./img/github.svg" alt="github"></a>
-                    </div>
-                    <div class="whatsapp">
-                        <img src="./img/whatsapp.svg" alt="whatsapp">
-                        <span>+1 (613) 879-9924</span>
-                    </div>
-                    <div class="sms">
-                        <img src="./img/sms.svg" alt="whatsapp">
-                        <span>+55 (11) 95687-9580</span>
-                    </div>
-                </div>
-                <p class="contact-p">All messages to be answered within 24 hours</p>
-            </div>
-            <div class="contact-right">
-                <form class="form" method="post">
-                    <div class="form-field" id="name-field-desktop">
-                        <input type="text" name="name" id="name-desktop" required>
-                        <label for="name-desktop">Name</label>
-                    </div>
-                    <div class="form-field" id="email-field-desktop">
-                        <input type="email" name="email" id="email-desktop" required>
-                        <label for="email-desktop">Email</label>
-                    </div>
-                    <div class="form-field" id="message-field-desktop">
-                        <textarea name="message" id="message-desktop" rows="12" required></textarea>
-                        <label for="message-desktop">Message</label>
-                    </div>
-                    <div id="submit-button-desktop">
-                        <input type="submit" id="submit-desktop" value="Send Message">
-                    </div>
-                </form>
-            </div>
+        <p class="contact-p">All messages to be answered within 24 hours</p>
+      </div>
+      <div class="desktop">
+        <div class="header">
+          <h1>Get In Touch</h1>
+          <img src="./img/illustrations/get-in-touch.svg" alt="get in touch" />
         </div>
+        <div class="contact-left">
+          <p>
+            Feel free to get in touch with me, I am always open to discussing
+            new projects, creative ideas or opportunities to be a part of your
+            vision.
+          </p>
+          <div class="email">
+            <div>
+              <img src="./img/gmail.png" alt="gmail" />
+              <span>justinrignault@gmail.com</span>
+            </div>
+            <a href="mailto:justinrignault@gmail.com?Subject=Hi%20Justin"
+              >Send Email</a
+            >
+          </div>
+          <div class="social">
+            <h2>Social</h2>
+            <div class="social-media">
+              <a
+                href="https://www.linkedin.com/in/justin-rignault/"
+                target="_blank"
+                ><img src="./img/linkedin.svg" alt="linkedin"
+              /></a>
+              <a href="https://github.com/justin-rignault" target="_blank"
+                ><img src="./img/github.svg" alt="github"
+              /></a>
+            </div>
+            <div class="whatsapp">
+              <img src="./img/whatsapp.svg" alt="whatsapp" />
+              <span>+1 (613) 879-9924</span>
+            </div>
+            <div class="sms">
+              <img src="./img/sms.svg" alt="whatsapp" />
+              <span>+55 (11) 95687-9580</span>
+            </div>
+          </div>
+          <p class="contact-p">All messages to be answered within 24 hours</p>
+        </div>
+        <div class="contact-right">
+          <form class="form" method="post">
+            <div class="form-field" id="name-field-desktop">
+              <input type="text" name="name" id="name-desktop" required />
+              <label for="name-desktop">Name</label>
+            </div>
+            <div class="form-field" id="email-field-desktop">
+              <input type="email" name="email" id="email-desktop" required />
+              <label for="email-desktop">Email</label>
+            </div>
+            <div class="form-field" id="message-field-desktop">
+              <textarea
+                name="message"
+                id="message-desktop"
+                rows="12"
+                required
+              ></textarea>
+              <label for="message-desktop">Message</label>
+            </div>
+            <div id="submit-button-desktop">
+              <input type="submit" id="submit-desktop" value="Send Message" />
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
     <footer>
-        <p id="copyright"></p>
+      <p id="copyright"></p>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/code.js"></script>
-</body>
+  </body>
 </html>
