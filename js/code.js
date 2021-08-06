@@ -10,6 +10,7 @@ function init() {
   activateSwipers();
   setFavicon();
   addEventListeners();
+  setMyAge();
   copyrightMessage();
 }
 
@@ -168,6 +169,16 @@ const addHighlight = (elem) => {
     el.classList.add("highlight");
   });
 };
+
+const setMyAge = () => {
+  const myBirthDate = new Date(1999, 4, 28);
+  const currentTime = new Date();
+  const ageDate = new Date(currentTime - myBirthDate);
+
+  const age = Math.abs(ageDate.getFullYear() - 1970)
+
+  document.getElementById('age').textContent = age
+}
 
 const copyrightMessage = () => {
   const date = new Date();
