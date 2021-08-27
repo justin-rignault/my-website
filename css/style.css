@@ -261,6 +261,7 @@ aside {
 .swiper-container {
   flex: 5;
   width: 90%;
+  overflow: hidden;
 }
 
 .swiper-slide {
